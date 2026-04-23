@@ -47,6 +47,20 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "Best Lead Generation Company in Sri Lanka (2026 Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "What separates the best lead generation companies in Sri Lanka — verified database, multi-channel reach, industry experience and qualified leads with transparent reporting.",
+    path: "/best-lead-generation-company-sri-lanka",
+    image: articleLeadGenAgency,
+  },
+  {
+    title: "Lead Generation Cost in Sri Lanka (2026 Pricing Guide)",
+    date: "Apr 23, 2026",
+    excerpt: "Lead generation cost in Sri Lanka 2026 — pricing by channel, industry & cost per lead. Compare email, SMS, WhatsApp, Google Ads and multi-channel pricing.",
+    path: "/lead-generation-cost-sri-lanka",
+    image: articleLeadGen,
+  },
+  {
     title: "What is Direct Marketing in Sri Lanka? Complete Guide (2026)",
     date: "Apr 23, 2026",
     excerpt: "Reach exact target customers by email, SMS, WhatsApp & web ads. Learn how direct marketing works in Sri Lanka, what it costs, and why businesses choose Buzz Connect.",

@@ -101,6 +101,8 @@ import BestDirectMarketingCompany from "./pages/articles/BestDirectMarketingComp
 import WebsiteDesignGuide from "./pages/articles/WebsiteDesignGuide.tsx";
 import BestWebsiteDesignCompany from "./pages/articles/BestWebsiteDesignCompany.tsx";
 import BestGoogleAdsAgency from "./pages/articles/BestGoogleAdsAgency.tsx";
+import BestLeadGenerationCompany from "./pages/articles/BestLeadGenerationCompany.tsx";
+import LeadGenerationCost from "./pages/articles/LeadGenerationCost.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -257,6 +259,8 @@ const App = () => (
               <Route path="/website-design-guide-sri-lanka" element={<WebsiteDesignGuide />} />
               <Route path="/best-website-design-company-sri-lanka" element={<BestWebsiteDesignCompany />} />
               <Route path="/best-google-ads-agency-sri-lanka" element={<BestGoogleAdsAgency />} />
+              <Route path="/best-lead-generation-company-sri-lanka" element={<BestLeadGenerationCompany />} />
+              <Route path="/lead-generation-cost-sri-lanka" element={<LeadGenerationCost />} />
               
               <Route path="*" element={<NotFound />} />
             </Routes>
