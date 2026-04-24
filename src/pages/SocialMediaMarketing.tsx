@@ -484,7 +484,7 @@ const SocialMediaMarketing = () => {
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-red-500/5 border border-red-500/20"
+        className="mb-16 max-w-4xl mx-auto p-8 rounded-2xl bg-destructive/5 border border-destructive/20"
       >
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">Common Mistakes Businesses Make</h2>
         <p className="text-muted-foreground leading-relaxed mb-4">
@@ -493,7 +493,7 @@ const SocialMediaMarketing = () => {
         <ul className="space-y-3">
           {commonMistakes.map((mistake, i) => (
             <li key={i} className="flex items-start gap-3">
-              <span className="w-6 h-6 rounded-full bg-red-500/10 text-red-500 flex items-center justify-center text-sm font-bold shrink-0">✕</span>
+              <span className="w-6 h-6 rounded-full bg-destructive/10 text-destructive flex items-center justify-center text-sm font-bold shrink-0">✕</span>
               <span className="text-muted-foreground">{mistake}</span>
             </li>
           ))}
