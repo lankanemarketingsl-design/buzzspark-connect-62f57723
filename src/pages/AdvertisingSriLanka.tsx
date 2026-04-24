@@ -303,6 +303,18 @@ const caseStudies = [
     campaign: "Email + WhatsApp to professional segments + Findit.lk job listings",
     results: ["3,000+ applications in 10 days", "All 50 positions filled within 21 days", "Cost per hire 40% lower than newspaper ads"],
   },
+  {
+    title: "Finance Company, Colombo",
+    objective: "Generate qualified leads for a new personal loan product targeting salaried professionals",
+    campaign: "Email campaign to salaried professionals database + SMS broadcast to verified consumers",
+    results: ["620+ loan enquiries received in 5 days", "180 qualified applications submitted", "Cost per qualified lead 60% lower than equivalent Google Ads"],
+  },
+  {
+    title: "Fashion Brand, Island-Wide Campaign",
+    objective: "Launch a new clothing collection and drive online sales nationwide",
+    campaign: "WhatsApp campaign to fashion-interested consumer database + email to past customer list",
+    results: ["900+ website visits within 48 hours of launch", "240 orders placed in the first week", "Revenue target achieved 11 days ahead of schedule"],
+  },
 ];
 
 /* ── Best platforms by category ── */
