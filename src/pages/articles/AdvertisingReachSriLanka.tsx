@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import RelatedArticles from "@/components/RelatedArticles";
-import articleImage from "@/assets/blog/article-advertising-reach.jpg";
+import articleImage from "@/assets/blog/article-advertising-reach.webp";
 
 const AdvertisingReachSriLanka = () => {
   const jsonLd = [
