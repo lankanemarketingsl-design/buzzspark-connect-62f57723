@@ -75,9 +75,92 @@ const faqs = [
     a: "BuzzConnect provides campaign performance reports covering delivery statistics, open rates (for email campaigns), and click-through rates. Most importantly, you measure success by the number of inquiries, calls, messages, and website visits your campaign generates. We encourage clients to track every lead source so we can optimise future campaigns based on real conversion data.",
   },
   {
-    q: "Can BuzzConnect help me advertise to Sri Lankan audiences from overseas?",
-    a: "Yes. BuzzConnect works with overseas clients — including Sri Lankan expatriates running businesses back home, foreign companies entering the Sri Lankan market, and international organisations targeting local audiences. We handle all campaign setup and management remotely.",
+    q: "How often should I run advertising campaigns in Sri Lanka?",
+    a: "Consistency outperforms one-off campaigns significantly. Businesses running monthly campaigns build audience familiarity, improve results through optimisation, and maintain a continuous pipeline of leads and enquiries. BuzzConnect recommends a minimum of one campaign per month for sustained growth, with weekly bursts during peak buying seasons for your industry.",
   },
+  {
+    q: "What is the difference between advertising and direct marketing?",
+    a: "Advertising broadly refers to any paid communication promoting a business. Direct marketing is a specific form of advertising that delivers your message directly to individual verified contacts — bypassing mass media entirely. Direct marketing is more targeted, more measurable, and typically delivers better ROI for lead generation than traditional mass advertising approaches.",
+  },
+  {
+    q: "Can BuzzConnect create campaign content in Sinhala and Tamil?",
+    a: "Yes. BuzzConnect creates campaign content in English, Sinhala, and Tamil — and can target language-specific audience segments within the database. This is essential for campaigns targeting regional audiences where Sinhala or Tamil delivers significantly higher engagement than English.",
+  },
+  {
+    q: "How does BuzzConnect measure success and improve future campaigns?",
+    a: "BuzzConnect analyses every campaign after completion. If results are below expected benchmarks, the team identifies the likely cause — audience targeting, message, offer, timing, or channel selection — and recommends specific improvements for the next campaign. Performance history from each campaign is used to progressively improve subsequent results.",
+  },
+];
+
+/* ── Geographic Reach ── */
+const geographicReach = [
+  { region: "Colombo & Western Province", opp: "Largest urban professional audience. Highest purchasing power. Most competitive advertising environment." },
+  { region: "Kandy & Central Province", opp: "Strong education, retail, and tourism market. Growing digital adoption especially among younger demographics." },
+  { region: "Galle & Southern Province", opp: "Tourism and hospitality hub. High-value property market. Growing entrepreneurial base with strong purchasing power." },
+  { region: "Jaffna & Northern Province", opp: "Rapidly growing digital audience. Significantly underserved by most advertisers — lower competition, strong engagement rates." },
+  { region: "Matara, Kurunegala, Anuradhapura", opp: "Growing middle-class consumer market. SMS and WhatsApp deliver strong results where internet speed is more variable." },
+];
+
+/* ── Channel Performance Comparison ── */
+const channelComparison = [
+  { channel: "SMS Marketing", reach: "98% open rate", best: "Flash sales, urgent offers, appointments, time-sensitive promotions" },
+  { channel: "WhatsApp Marketing", reach: "85–95% open rate", best: "Personal outreach, bookings, high-value offers, real estate" },
+  { channel: "Email Marketing", reach: "28–35% open rate (LK)", best: "B2B, professionals, education, finance, complex offers" },
+  { channel: "Google Ads", reach: "Top search position", best: "High-intent buyers actively searching for your product or service" },
+  { channel: "Web Banner Ads", reach: "High impression volume", best: "Brand awareness, retargeting, visual product promotion on Findit.lk" },
+  { channel: "Facebook/Instagram", reach: "2–5% organic reach", best: "Consumer brand building, events, fashion, younger demographics" },
+  { channel: "TikTok Ads", reach: "High for 18–35 audience", best: "Fashion, food, entertainment, consumer product launches" },
+  { channel: "Television", reach: "Mass reach, no targeting", best: "National brand campaigns, FMCG, large consumer brands" },
+  { channel: "Radio", reach: "Regional mass reach", best: "Local awareness, commuter audience, regional campaigns" },
+  { channel: "Newspaper", reach: "35+ demographic", best: "Formal announcements, legal notices, recruitment ads" },
+];
+
+/* ── BuzzConnect vs Typical Agency ── */
+const vsTypicalAgency = [
+  { what: "Database", bc: "500,000+ verified Sri Lankan contacts — industry-segmented", typical: "Generic purchased lists with no verification" },
+  { what: "Channels", bc: "Email + SMS + WhatsApp + Web Banners + Google Ads + Social Media", typical: "1 or 2 channels only" },
+  { what: "Launch Speed", bc: "Campaign live within 48 hours of approval", typical: "2 to 3 weeks for typical agency" },
+  { what: "Targeting", bc: "Segmented by industry, location, job title, age, behaviour", typical: "Broad demographic only" },
+  { what: "Findit.lk Access", bc: "Exclusive placement on Sri Lanka's leading classified platform", typical: "No access" },
+  { what: "Reporting", bc: "Full analytics — open rates, click rates, leads generated, CPL", typical: "Impressions and reach only" },
+  { what: "Pricing", bc: "Fixed transparent packages with no hidden fees", typical: "Variable retainers with surprise charges" },
+  { what: "Industry Focus", bc: "Proven campaigns for hotels, real estate, education, finance, events", typical: "Generic approach" },
+];
+
+/* ── Industry-Channel Recommendation ── */
+const industryChannel = [
+  { industry: "Hotels & Tourism", primary: "Email to professionals & travel agents", secondary: "SMS for last-minute booking urgency" },
+  { industry: "Real Estate", primary: "Email to verified investor & buyer database", secondary: "WhatsApp for personalised property follow-up" },
+  { industry: "Education", primary: "Email to parents & working professionals", secondary: "SMS for intake deadline reminders" },
+  { industry: "Finance", primary: "Email to business owners & salaried staff", secondary: "WhatsApp for personal product enquiries" },
+  { industry: "Restaurants", primary: "WhatsApp to local consumer database", secondary: "SMS for daily specials & weekend promotions" },
+  { industry: "Events", primary: "Email for early registrations & awareness", secondary: "SMS for last-minute ticket urgency" },
+  { industry: "Recruitment", primary: "Email to professional & graduate database", secondary: "Findit.lk classifieds for job listings" },
+  { industry: "Healthcare", primary: "SMS to local area subscribers", secondary: "Email for service awareness campaigns" },
+  { industry: "Fashion & Retail", primary: "WhatsApp for product & collection launches", secondary: "Email for seasonal sales & loyalty campaigns" },
+  { industry: "Automotive", primary: "Email to professional & business owner base", secondary: "WhatsApp for test drive bookings & follow-up" },
+];
+
+/* ── ROI Benchmarks by Industry ── */
+const roiBenchmarks = [
+  { industry: "Real Estate", cpl: "LKR 2,500 – 8,000 per qualified property enquiry" },
+  { industry: "Finance & Investment", cpl: "LKR 2,000 – 7,000 per qualified financial product lead" },
+  { industry: "Hotels & Tourism", cpl: "LKR 500 – 2,000 per booking enquiry" },
+  { industry: "Education", cpl: "LKR 800 – 2,500 per student course enquiry" },
+  { industry: "Healthcare", cpl: "LKR 600 – 2,000 per patient appointment enquiry" },
+  { industry: "Automotive", cpl: "LKR 1,500 – 5,000 per qualified vehicle enquiry" },
+  { industry: "Events", cpl: "LKR 300 – 1,200 per ticket or registration lead" },
+  { industry: "Recruitment", cpl: "LKR 200 – 800 per qualified candidate application" },
+  { industry: "Restaurants", cpl: "LKR 150 – 600 per table reservation" },
+];
+
+/* ── Common Mistakes ── */
+const commonMistakes = [
+  { title: "Relying on a Single Channel", desc: "Businesses running only Facebook ads or one email campaign are severely limiting results. The most effective Sri Lankan advertisers run coordinated multi-channel campaigns — email and SMS together, or Google Ads combined with direct marketing follow-up. Each additional channel multiplies the impact of the others." },
+  { title: "No Dedicated Landing Page", desc: "Sending advertising traffic to your homepage is one of the most expensive mistakes in Sri Lankan digital marketing. A dedicated landing page with one clear offer and one call to action converts at 5 to 10 times the rate of a homepage — for the same advertising spend." },
+  { title: "Advertising Without a Specific Offer", desc: "'Visit our website' is not an advertising offer. 'Book a free consultation this week' is. 'Register before Friday for 20% off' is. Every campaign must have one specific, time-bound reason for the audience to act right now." },
+  { title: "Running One Campaign and Stopping", desc: "Advertising compounds over time. The first campaign delivers results. The second delivers more because the agency has learned what works. Businesses that run one campaign and stop are capturing perhaps 20% of the value that consistent campaigning would deliver." },
+  { title: "Slow Lead Follow-Up", desc: "Generating leads through advertising and then following up 2 to 3 days later wastes the entire investment. Sri Lankan consumers who submit an enquiry expect a response within 2 to 4 hours. Leads not contacted within the first hour convert at a fraction of the rate." },
 ];
 
 /* ── Industries ── */
