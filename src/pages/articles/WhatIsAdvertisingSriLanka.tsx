@@ -16,6 +16,52 @@ const WhatIsAdvertisingSriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Advertising in Sri Lanka is any paid promotion that helps a business reach its target audience — through digital channels like email, SMS, WhatsApp, Google Ads, web banners and social media, or through traditional channels like TV, radio and print. In 2026, digital advertising dominates because it is targeted, measurable and delivers faster results.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the main types of advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The main types of advertising in Sri Lanka are: email marketing, SMS marketing, WhatsApp marketing, web banner advertising, Google Ads, social media advertising, multi-channel campaigns, and traditional advertising (TV, radio, print, outdoor).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does advertising cost in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Advertising in Sri Lanka starts from LKR 20,000 for a focused SMS campaign, LKR 25,000 for email marketing, LKR 50,000 for Google Ads, and from LKR 100,000 for a full multi-channel campaign reaching 500,000+ verified contacts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which advertising channel works best in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "It depends on your goal. For instant mass reach, multi-channel email + SMS works best. For top-of-Google visibility, Google Ads. For ongoing brand presence, social media and web banners. Most businesses get the best ROI by combining 2-3 channels.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How long does it take to launch an advertising campaign in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "With Buzz Connect, advertising campaigns go live within 24-48 hours of brief approval — including creative design, audience selection and channel deployment.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +71,10 @@ const WhatIsAdvertisingSriLanka = () => {
       subtitle="Every type of advertising available in Sri Lanka, which channels work for which goals, and how to choose the right one for your business."
     >
       <SEOHead
-        title="What is Advertising in Sri Lanka? Complete Guide (2026) | Buzz Connect"
-        description="Complete guide to advertising in Sri Lanka — types, channels, costs and how to choose the right advertising mix. Reach 500,000+ verified contacts with Buzz Connect."
+        title="What is Advertising in Sri Lanka? Complete 2026 Guide | Buzz Connect"
+        description="What is advertising in Sri Lanka? Complete 2026 guide to types, channels, costs & ROI. Reach 500,000+ verified contacts with email, SMS, WhatsApp & multi-channel ads."
         canonical="/what-is-advertising-sri-lanka"
-        keywords="advertising sri lanka, advertising in sri lanka, types of advertising sri lanka, digital advertising sri lanka"
+        keywords="advertising sri lanka, advertising in sri lanka, what is advertising sri lanka, types of advertising sri lanka, digital advertising sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

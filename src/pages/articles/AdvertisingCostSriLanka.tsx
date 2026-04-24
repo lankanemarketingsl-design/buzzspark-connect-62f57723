@@ -16,6 +16,44 @@ const AdvertisingCostSriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How much does advertising cost in Sri Lanka in 2026?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Advertising in Sri Lanka costs from LKR 20,000 for SMS campaigns, LKR 25,000 for email marketing, LKR 30,000 for WhatsApp campaigns, LKR 50,000+ for Google Ads, and LKR 100,000-400,000 for full multi-channel campaigns reaching 500,000+ verified contacts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much should a small business spend on advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Small businesses in Sri Lanka should allocate 5-10% of monthly target revenue to advertising, with 10-15% if in growth mode. A typical SME starts with LKR 30,000-75,000/month across email + SMS or social media.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the cheapest advertising channel in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Email marketing is the cheapest advertising channel in Sri Lanka per contact reached, with campaigns starting at LKR 25,000 to reach 50,000+ verified email addresses — far less per contact than print, TV or Google Ads.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Why does advertising cost vary so much in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Advertising cost in Sri Lanka varies based on channel, audience size, targeting precision, creative production, campaign duration and reporting depth. Multi-channel campaigns cost more upfront but deliver lower cost per lead than single channels.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +63,10 @@ const AdvertisingCostSriLanka = () => {
       subtitle="Real advertising costs in Sri Lanka 2026 — by channel, by industry, by business size. Plan your budget with confidence."
     >
       <SEOHead
-        title="Advertising Cost in Sri Lanka 2026 — Pricing Guide | Buzz Connect"
-        description="Advertising cost in Sri Lanka 2026 — email LKR 25K+, SMS LKR 20K+, Google Ads LKR 50K+, multi-channel from LKR 100K. Full pricing guide & ROI calculator."
+        title="Advertising Cost in Sri Lanka 2026 — Real Pricing per Channel | Buzz Connect"
+        description="Advertising cost in Sri Lanka 2026 — email from LKR 25K, SMS from LKR 20K, Google Ads from LKR 50K, multi-channel from LKR 100K. Full pricing guide by channel & industry."
         canonical="/advertising-cost-sri-lanka"
-        keywords="advertising cost sri lanka, advertising price sri lanka, digital advertising cost sri lanka"
+        keywords="advertising cost sri lanka, advertising cost in sri lanka, advertising price sri lanka, advertising rates sri lanka, digital advertising cost sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

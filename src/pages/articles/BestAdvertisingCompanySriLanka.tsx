@@ -16,6 +16,44 @@ const BestAdvertisingCompanySriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Which is the best advertising company in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Buzz Connect is among the leading advertising companies in Sri Lanka, trusted by 2,000+ businesses since 2014. We deliver multi-channel campaigns (email, SMS, WhatsApp, web banners, Google Ads) reaching 500,000+ verified contacts with transparent reporting on every campaign.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I choose the best advertising agency in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Use a 7-point framework: proven results in your industry, full multi-channel capability, verified audience database, transparent reporting, in-house creative, fast turnaround (24-48 hours), and clear pricing with no hidden costs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What services does the best advertising company offer?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "A top advertising company in Sri Lanka should offer email marketing, SMS marketing, WhatsApp marketing, web banner advertising, Google Ads management, social media advertising, multi-channel campaigns, landing page design and detailed performance reporting.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much do top advertising agencies charge in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Top advertising agencies in Sri Lanka charge from LKR 25,000 for single-channel campaigns and from LKR 100,000 for full multi-channel campaigns. Pricing depends on audience size, channels used and campaign duration.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +63,10 @@ const BestAdvertisingCompanySriLanka = () => {
       subtitle="The 7-point framework to evaluate any advertising company in Sri Lanka — and why Buzz Connect is trusted by 2,000+ businesses."
     >
       <SEOHead
-        title="Best Advertising Company in Sri Lanka 2026 | Buzz Connect"
-        description="The best advertising company in Sri Lanka — 500,000+ verified database, full multi-channel campaigns, transparent reporting. 7-point evaluation framework included."
+        title="Best Advertising Company in Sri Lanka 2026 — 7-Point Guide | Buzz Connect"
+        description="Best advertising company in Sri Lanka 2026 — 500,000+ verified contacts, multi-channel email/SMS/WhatsApp campaigns, transparent reporting. 7-point evaluation framework."
         canonical="/best-advertising-company-sri-lanka"
-        keywords="best advertising company sri lanka, top advertising agency sri lanka, leading advertising company sri lanka"
+        keywords="best advertising company sri lanka, best advertising agency sri lanka, top advertising agency sri lanka, leading advertising company sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },
