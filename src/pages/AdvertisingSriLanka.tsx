@@ -16,17 +16,23 @@ import RelatedArticles from "@/components/RelatedArticles";
 /* ── Table of Contents ── */
 const tocItems = [
   { id: "digital-audience", label: "Digital Audience in Sri Lanka — Why Now Is the Best Time" },
+  { id: "geographic-reach", label: "Geographic Reach — Advertising Beyond Colombo" },
   { id: "what-is", label: "What Is Advertising in Sri Lanka?" },
   { id: "types", label: "Types of Advertising Available in Sri Lanka" },
+  { id: "channel-comparison", label: "Channel Performance Comparison — All Channels Side by Side" },
   { id: "why-different", label: "Why BuzzConnect Is Different From Other Agencies" },
+  { id: "vs-typical-agency", label: "BuzzConnect vs Typical Agency — Direct Comparison" },
   { id: "direct-marketing", label: "Why Direct Marketing Outperforms Traditional Advertising" },
   { id: "comparison", label: "Direct Marketing vs Social Media — Full Comparison" },
   { id: "industries", label: "Industries We Serve" },
+  { id: "industry-channel", label: "Industry-by-Channel Advertising Recommendation" },
   { id: "results", label: "Real Campaign Results from BuzzConnect Clients" },
   { id: "cost", label: "Cost of Advertising in Sri Lanka" },
-  { id: "platforms", label: "Best Advertising Platforms in Sri Lanka in 2025" },
+  { id: "roi-benchmarks", label: "Advertising ROI — Industry Benchmarks" },
+  { id: "platforms", label: "Best Advertising Platforms in Sri Lanka in 2026" },
   { id: "choose-strategy", label: "How to Choose the Right Advertising Strategy" },
   { id: "how-it-works", label: "Step-by-Step: How a BuzzConnect Campaign Works" },
+  { id: "mistakes", label: "Common Advertising Mistakes Sri Lankan Businesses Make" },
   { id: "faq", label: "Frequently Asked Questions" },
 ];
 
