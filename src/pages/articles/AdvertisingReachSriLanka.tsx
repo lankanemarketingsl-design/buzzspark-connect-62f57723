@@ -16,6 +16,44 @@ const AdvertisingReachSriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How can I reach 500,000+ customers fast in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Use Buzz Connect's multi-channel advertising — a single campaign combining email, SMS, WhatsApp and web banners reaches 500,000+ verified Sri Lankan contacts within 24-48 hours of brief approval.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is mass-reach advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Mass-reach advertising in Sri Lanka means delivering one message to a very large verified audience quickly. Buzz Connect operates Sri Lanka's largest direct marketing database with 500,000+ permission-based contacts segmented by industry and location.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How quickly can I reach a large Sri Lankan audience?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "An advertising campaign reaching 500,000+ Sri Lankans can be live within 24-48 hours of approval. Email and SMS deliver within hours, WhatsApp within a day, and banner ads typically within 48 hours.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is mass-reach advertising in Sri Lanka cost-effective?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. A 500,000-contact multi-channel campaign starts from LKR 100,000 — under LKR 0.20 per contact reached, far cheaper than print, TV or Google Ads on a per-impression basis.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +63,10 @@ const AdvertisingReachSriLanka = () => {
       subtitle="How Buzz Connect's mass-reach advertising delivers your message to half a million verified Sri Lankans in under 48 hours."
     >
       <SEOHead
-        title="Reach 500,000+ Customers Fast — Advertising Sri Lanka | Buzz Connect"
-        description="Reach 500,000+ verified Sri Lankan contacts with one campaign. Email, SMS, WhatsApp & web banners — live in 24-48 hours. Sri Lanka's largest direct marketing database."
+        title="Reach 500,000+ Customers Fast in Sri Lanka — Advertising | Buzz Connect"
+        description="Reach 500,000+ verified Sri Lankans in 24-48 hours with one multi-channel campaign — email, SMS, WhatsApp & web banners. Sri Lanka's largest direct marketing database."
         canonical="/advertising-reach-sri-lanka"
-        keywords="reach customers fast sri lanka, mass advertising sri lanka, large audience advertising sri lanka"
+        keywords="reach customers fast sri lanka, mass advertising sri lanka, large audience advertising sri lanka, advertising reach sri lanka, 500000 contacts sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

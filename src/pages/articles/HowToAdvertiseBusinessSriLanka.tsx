@@ -16,6 +16,60 @@ const HowToAdvertiseBusinessSriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "How to Advertise Your Business in Sri Lanka",
+      description: "An 8-step process to launch effective advertising campaigns in Sri Lanka.",
+      step: [
+        { "@type": "HowToStep", position: 1, name: "Define your target audience", text: "Define your audience by industry, location, job title, demographics and behaviour." },
+        { "@type": "HowToStep", position: 2, name: "Set a clear campaign goal", text: "Pick one measurable goal: leads, bookings, registrations, traffic or awareness." },
+        { "@type": "HowToStep", position: 3, name: "Choose your advertising channels", text: "Match channels to goal — email/SMS for reach, Google Ads for intent, banners for retargeting." },
+        { "@type": "HowToStep", position: 4, name: "Set your budget", text: "Allocate 5-10% of target revenue to advertising; 10-15% in growth mode." },
+        { "@type": "HowToStep", position: 5, name: "Create your campaign message", text: "Answer in 3 seconds: what you offer, why they should care, what to do next." },
+        { "@type": "HowToStep", position: 6, name: "Build your landing page", text: "Build a focused landing page matching your ad — short form, one CTA, mobile-optimised." },
+        { "@type": "HowToStep", position: 7, name: "Launch and track", text: "Track opens, clicks, CTR, CPC, leads and cost per lead daily." },
+        { "@type": "HowToStep", position: 8, name: "Optimise and scale", text: "Review winning channels, segments and creatives; reinvest budget into best performers." },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How do I advertise my business in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Follow 8 steps: define target audience, set a clear goal, choose channels (email, SMS, Google Ads, etc.), set a budget, craft your message, build a landing page, launch & track results, then optimise and scale what works.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the best way to advertise in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The best way to advertise in Sri Lanka is multi-channel: combine email + SMS + WhatsApp for instant reach, then layer Google Ads and web banners for ongoing visibility and retargeting.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How fast can I launch an advertising campaign in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "With Buzz Connect, advertising campaigns can be live within 24-48 hours of brief approval — including audience selection, creative production and channel deployment.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I measure if my advertising in Sri Lanka is working?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Measure email open and click rates, SMS delivery and response rates, Google Ads CTR/CPC/conversions, total leads generated, and cost per lead. A working campaign improves these metrics over time.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +79,10 @@ const HowToAdvertiseBusinessSriLanka = () => {
       subtitle="The exact 8-step process for launching effective advertising campaigns in Sri Lanka — from audience definition to optimisation."
     >
       <SEOHead
-        title="How to Advertise Your Business in Sri Lanka — Step-by-Step | Buzz Connect"
-        description="Complete step-by-step guide on how to advertise in Sri Lanka 2026 — audience, goal, channels, budget, creative & launch. Get leads in 48 hours."
+        title="How to Advertise Your Business in Sri Lanka 2026 — 8-Step Guide | Buzz Connect"
+        description="How to advertise in Sri Lanka 2026 — 8 proven steps from audience to launch. Pick channels, set budget, write message & get leads in 48 hours. Free guide."
         canonical="/how-to-advertise-business-sri-lanka"
-        keywords="how to advertise in sri lanka, how to advertise business sri lanka, advertising guide sri lanka"
+        keywords="how to advertise in sri lanka, how to advertise business sri lanka, how to advertise your business sri lanka, advertising guide sri lanka, advertising steps sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

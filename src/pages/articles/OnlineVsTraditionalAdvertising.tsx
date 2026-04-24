@@ -16,6 +16,44 @@ const OnlineVsTraditionalAdvertising = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is the difference between online and traditional advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Online advertising (email, SMS, WhatsApp, Google Ads, social media, web banners) is targeted, measurable, and adjustable in real time. Traditional advertising (TV, radio, print, billboards) reaches mass audiences but cannot be precisely targeted or accurately measured.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which is better for businesses in Sri Lanka — online or traditional advertising?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "For 95% of Sri Lankan businesses in 2026, online advertising is better. It costs less per result, targets exact audiences, launches in 24-48 hours and provides full performance data. Traditional advertising suits only very large brand-awareness budgets.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is online advertising cheaper than traditional advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes. Online advertising in Sri Lanka starts from LKR 20,000 and delivers measurable cost per lead. A single TV slot or full-page newspaper ad can cost LKR 200,000+ with no way to measure exactly who responded.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I combine online and traditional advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Large brands often combine both — traditional for awareness and online for conversion. SMEs in Sri Lanka should focus their budget on online advertising first, then add traditional only after a proven ROI base.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +63,10 @@ const OnlineVsTraditionalAdvertising = () => {
       subtitle="A clear, objective head-to-head comparison so you can decide where to put your advertising budget."
     >
       <SEOHead
-        title="Online vs Traditional Advertising in Sri Lanka 2026 | Buzz Connect"
-        description="Online vs traditional advertising Sri Lanka — compare targeting, cost, speed, measurability & ROI. Why digital wins for most businesses in 2026."
+        title="Online vs Traditional Advertising Sri Lanka 2026 — Which Wins? | Buzz Connect"
+        description="Online vs traditional advertising in Sri Lanka 2026 — compare targeting, cost, speed, ROI & measurability. See why digital wins for 95% of Sri Lankan businesses."
         canonical="/online-vs-traditional-advertising-sri-lanka"
-        keywords="online advertising vs traditional advertising sri lanka, digital vs traditional advertising"
+        keywords="online advertising vs traditional advertising sri lanka, online vs traditional advertising, digital vs traditional advertising sri lanka, advertising comparison sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

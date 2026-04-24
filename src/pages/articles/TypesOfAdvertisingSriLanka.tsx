@@ -16,6 +16,44 @@ const TypesOfAdvertisingSriLanka = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What are the main types of advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The 8 main types of advertising in Sri Lanka are: email marketing, SMS marketing, WhatsApp marketing, web banner advertising, Google Ads, social media advertising, multi-channel campaigns, and traditional advertising (TV, radio, print).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Which type of advertising is most effective in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Multi-channel advertising (combining email, SMS and WhatsApp) is the most effective type for most Sri Lankan businesses because it reaches the same audience across multiple touchpoints, multiplying engagement and conversions.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What is the cheapest type of advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SMS marketing is one of the cheapest types of advertising in Sri Lanka, starting from LKR 20,000 for a focused campaign. Email marketing is similarly affordable from LKR 25,000 with the lowest cost per contact reached.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Should I use digital or traditional advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Digital advertising wins for 95% of Sri Lankan businesses in 2026 because it is targeted, measurable, faster to launch and lower cost per result. Traditional advertising still works for very large brand-awareness budgets only.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +63,10 @@ const TypesOfAdvertisingSriLanka = () => {
       subtitle="The 8 main types of advertising available to Sri Lankan businesses — what they cost, who they work for, and how to combine them."
     >
       <SEOHead
-        title="Types of Advertising in Sri Lanka (2026 Guide) | Buzz Connect"
-        description="8 types of advertising in Sri Lanka — email, SMS, WhatsApp, banner ads, Google Ads, social media & more. Compare costs, ROI and choose the right channel."
+        title="8 Types of Advertising in Sri Lanka 2026 — Compare & Choose | Buzz Connect"
+        description="Types of advertising in Sri Lanka 2026 — compare email, SMS, WhatsApp, web banners, Google Ads, social media & multi-channel. Costs, pros, cons & best fit per goal."
         canonical="/types-of-advertising-sri-lanka"
-        keywords="types of advertising sri lanka, advertising channels sri lanka, digital advertising sri lanka"
+        keywords="types of advertising sri lanka, types of advertising in sri lanka, advertising channels sri lanka, digital advertising sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },

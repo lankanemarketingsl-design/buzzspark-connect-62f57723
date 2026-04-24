@@ -16,6 +16,52 @@ const DigitalAdvertisingGuide = () => {
       publisher: { "@type": "Organization", name: "Buzz Connect" },
       datePublished: "2026-04-24",
     },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "What is digital advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Digital advertising in Sri Lanka is any paid promotion through digital channels — email marketing, SMS, WhatsApp, web banners, Google Ads and social media. Unlike traditional ads, it is targeted, measurable, adjustable in real time and can launch in 24-48 hours.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What are the main digital advertising channels in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "The 6 core digital advertising channels in Sri Lanka are: email marketing, SMS marketing, WhatsApp marketing, web banner advertising, Google Ads (search/display/YouTube), and social media advertising (Facebook, Instagram, TikTok, LinkedIn).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How much does digital advertising cost in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Digital advertising in Sri Lanka starts from LKR 20,000 for SMS, LKR 25,000 for email, LKR 50,000+ for Google Ads and from LKR 100,000 for full multi-channel campaigns reaching 500,000+ verified contacts.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How do I start digital advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Start by defining your audience and goal, then pick 1-2 channels that match (email/SMS for reach, Google Ads for buyer intent). Build a focused landing page, launch the campaign, track daily metrics and scale what works.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Is digital advertising better than traditional advertising in Sri Lanka?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes — for most Sri Lankan businesses in 2026, digital advertising delivers lower cost per lead, precise targeting, real-time adjustments and full ROI tracking that traditional channels (TV, radio, print) cannot match.",
+          },
+        },
+      ],
+    },
   ];
 
   return (
@@ -25,10 +71,10 @@ const DigitalAdvertisingGuide = () => {
       subtitle="Every digital advertising channel, cost, and strategy you need to drive consistent, growing results for your Sri Lankan business."
     >
       <SEOHead
-        title="Digital Advertising Sri Lanka — Complete Guide (2026) | Buzz Connect"
-        description="Complete digital advertising guide Sri Lanka 2026 — 6 core channels, costs, strategies & how to build your campaign. Reach 500,000+ verified contacts."
+        title="Digital Advertising Sri Lanka 2026 — Complete Guide & Costs | Buzz Connect"
+        description="Digital advertising in Sri Lanka 2026 — complete guide to 6 core channels, costs & strategy. Email, SMS, WhatsApp, Google Ads, banners & social. Reach 500,000+ contacts."
         canonical="/digital-advertising-sri-lanka-complete-guide"
-        keywords="digital advertising sri lanka, online advertising guide sri lanka, digital marketing sri lanka"
+        keywords="digital advertising sri lanka, digital advertising in sri lanka, digital advertising guide sri lanka, online advertising sri lanka, digital marketing sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },
