@@ -147,29 +147,6 @@ const SocialMediaMarketing = () => {
         jsonLd={jsonLd}
       />
 
-      {/* Prominent Trust Badges - Top Section */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="mb-12 -mt-4"
-      >
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
-          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/15 border border-accent/40 shadow-sm">
-            <Zap className="w-5 h-5 text-accent" />
-            <span className="text-accent font-bold text-sm sm:text-base">Campaigns from LKR 50,000</span>
-          </div>
-          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary border border-border shadow-sm">
-            <Users className="w-5 h-5 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm sm:text-base">Multi-Platform Reach</span>
-          </div>
-          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary border border-border shadow-sm">
-            <Globe2 className="w-5 h-5 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm sm:text-base">Findit.lk Integration</span>
-          </div>
-        </div>
-      </motion.div>
-
       {/* Introduction */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -186,22 +163,6 @@ const SocialMediaMarketing = () => {
         <p className="text-muted-foreground leading-relaxed">
           This guide explains everything you need to know about <strong>social media marketing in Sri Lanka</strong>, including strategies, benefits, pricing, and how to choose the right approach for your business.
         </p>
-
-        {/* Trust Strip */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mt-8">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30">
-            <Zap className="w-4 h-4 text-accent" />
-            <span className="text-accent font-bold text-sm">Campaigns from LKR 50,000</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <Users className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">Multi-Platform Reach</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-secondary border border-border">
-            <Globe2 className="w-4 h-4 text-secondary-foreground" />
-            <span className="text-secondary-foreground font-bold text-sm">Findit.lk Integration</span>
-          </div>
-        </div>
 
         {/* Social Proof Stats */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
