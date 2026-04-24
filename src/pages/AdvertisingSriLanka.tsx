@@ -552,6 +552,34 @@ const AdvertisingSriLanka = () => {
           </div>
         </motion.div>
 
+        {/* ── Geographic Reach ── */}
+        <motion.div id="geographic-reach" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            🗺️ Advertising in Sri Lanka Beyond Colombo — Island-Wide Reach
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            One of the biggest missed opportunities for Sri Lankan businesses is limiting advertising to the Western Province. Digital penetration is growing rapidly across every region — and the audiences <strong>outside Colombo are underserved</strong> by most agencies.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-4 font-heading font-bold text-foreground">Region</th>
+                  <th className="text-left p-4 font-heading font-bold text-foreground">Advertising Opportunity</th>
+                </tr>
+              </thead>
+              <tbody>
+                {geographicReach.map((row, i) => (
+                  <tr key={row.region} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-4 font-semibold text-foreground"><MapPin className="inline w-4 h-4 text-accent mr-2" />{row.region}</td>
+                    <td className="p-4 text-muted-foreground">{row.opp}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </motion.div>
+
         {/* ── 2. What Is Advertising ── */}
         <motion.div id="what-is" {...fadeIn} className="mb-16 scroll-mt-24">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
@@ -642,6 +670,36 @@ const AdvertisingSriLanka = () => {
           </div>
         </motion.div>
 
+        {/* ── Channel Performance Comparison ── */}
+        <motion.div id="channel-comparison" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            📊 Channel Performance Comparison — All Advertising Channels in Sri Lanka (2026)
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Use this table to quickly identify which advertising channel matches your goal, audience, and expected results.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Channel</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Open / Reach Rate</th>
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Best For in Sri Lanka</th>
+                </tr>
+              </thead>
+              <tbody>
+                {channelComparison.map((row, i) => (
+                  <tr key={row.channel} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.channel}</td>
+                    <td className="p-3 text-foreground">{row.reach}</td>
+                    <td className="p-3 text-muted-foreground">{row.best}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </motion.div>
+
         {/* ── 4. Why BuzzConnect is Different ── */}
         <motion.div id="why-different" {...fadeIn} className="mb-16 scroll-mt-24">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
@@ -667,6 +725,36 @@ const AdvertisingSriLanka = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* ── BuzzConnect vs Typical Agency ── */}
+        <motion.div id="vs-typical-agency" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            ⚖️ BuzzConnect vs a Typical Sri Lankan Advertising Agency — Side-by-Side
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            See exactly how BuzzConnect compares against a typical advertising agency in Sri Lanka across the eight factors that matter most to your campaign results.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">What to Compare</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">BuzzConnect</th>
+                  <th className="text-left p-3 font-heading font-bold text-muted-foreground">Typical Agency</th>
+                </tr>
+              </thead>
+              <tbody>
+                {vsTypicalAgency.map((row, i) => (
+                  <tr key={row.what} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.what}</td>
+                    <td className="p-3 text-foreground">{row.bc}</td>
+                    <td className="p-3 text-muted-foreground">{row.typical}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </motion.div>
 
@@ -775,6 +863,36 @@ const AdvertisingSriLanka = () => {
           <p className="text-sm text-muted-foreground mt-6 italic">
             <strong>Other industries we serve:</strong> Vehicle sales and rentals, event management, fashion and lifestyle brands, logistics and freight, IT and technology services, government and public sector communications, NGOs and nonprofit organisations.
           </p>
+        </motion.div>
+
+        {/* ── Industry × Channel Recommendation ── */}
+        <motion.div id="industry-channel" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            🎯 Which Advertising Channel Works Best for Your Industry in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Each industry has its own audience behaviour. This table shows BuzzConnect's recommended primary and secondary channel for the most active sectors in Sri Lanka.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Industry</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Primary Channel</th>
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Secondary Channel</th>
+                </tr>
+              </thead>
+              <tbody>
+                {industryChannel.map((row, i) => (
+                  <tr key={row.industry} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.industry}</td>
+                    <td className="p-3 text-foreground">{row.primary}</td>
+                    <td className="p-3 text-muted-foreground">{row.secondary}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </motion.div>
 
         {/* ── 8. Real Campaign Results ── */}
@@ -906,10 +1024,43 @@ const AdvertisingSriLanka = () => {
           </div>
         </motion.div>
 
+        {/* ── ROI Benchmarks ── */}
+        <motion.div id="roi-benchmarks" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            📐 Advertising ROI Benchmarks by Industry in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Use these benchmarks to evaluate whether your advertising investment is delivering competitive returns. Compare your cost per lead (CPL) against your average customer lifetime value — a real estate lead at LKR 5,000 that converts into a property sale is exceptional value.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Industry</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Strong Cost Per Lead (LKR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {roiBenchmarks.map((row, i) => (
+                  <tr key={row.industry} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.industry}</td>
+                    <td className="p-3 text-foreground">{row.cpl}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="p-5 rounded-2xl bg-accent/5 border border-accent/20">
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              💡 A student enquiry costing LKR 1,500 that enrols in a LKR 300,000 programme delivers a <strong>200x return on the lead cost</strong>. Always measure CPL against lifetime value, not just upfront cost.
+            </p>
+          </div>
+        </motion.div>
+
         {/* ── 10. Best Platforms ── */}
         <motion.div id="platforms" {...fadeIn} className="mb-16 scroll-mt-24">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            🌐 10. Best Advertising Platforms in Sri Lanka in 2025
+            🌐 10. Best Advertising Platforms in Sri Lanka in 2026
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             The advertising landscape in Sri Lanka is evolving rapidly. These are the platforms and channels delivering the strongest results for businesses advertising in Sri Lanka today.
@@ -998,6 +1149,48 @@ const AdvertisingSriLanka = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* ── Common Mistakes ── */}
+        <motion.div id="mistakes" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            ⚠️ Common Advertising Mistakes Sri Lankan Businesses Make — And How to Avoid Them
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Understanding what <em>not</em> to do is just as valuable as knowing the right strategy. These are the five most common mistakes BuzzConnect sees from businesses running their first advertising campaigns in Sri Lanka.
+          </p>
+          <div className="space-y-4">
+            {commonMistakes.map((m, i) => (
+              <div key={m.title} className="p-6 rounded-2xl bg-card border border-border shadow-card">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-heading font-bold text-destructive">{i + 1}</span>
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-foreground mb-2">Mistake {i + 1} — {m.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">{m.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 p-6 rounded-2xl bg-accent/5 border border-accent/20">
+            <p className="text-foreground font-semibold mb-2">How BuzzConnect helps you avoid every one of these mistakes:</p>
+            <ul className="space-y-2">
+              {[
+                "Multi-channel campaigns by default — never single-channel only",
+                "Landing page design available as part of campaign packages",
+                "Campaign strategists ensure every campaign has a compelling, specific offer",
+                "Monthly retainer programmes build consistent momentum and compounding results",
+                "Instant lead delivery to your team via email, WhatsApp, or CRM integration",
+              ].map(item => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </motion.div>
 
