@@ -23,10 +23,10 @@ const smmServices = [
 ];
 
 const adPlatforms = [
-  { name: "Facebook Ads", desc: "Reach Sri Lanka's largest social audience with targeted campaigns", color: "bg-blue-500/10 text-blue-600" },
-  { name: "Instagram Ads", desc: "Visual storytelling that converts for lifestyle brands", color: "bg-pink-500/10 text-pink-600" },
-  { name: "TikTok Ads", desc: "Engage younger demographics with viral content", color: "bg-purple-500/10 text-purple-600" },
-  { name: "LinkedIn Ads", desc: "Target B2B decision-makers and professionals", color: "bg-sky-500/10 text-sky-600" },
+  { name: "Facebook Ads", desc: "Reach Sri Lanka's largest social audience with targeted campaigns", color: "bg-accent/10 text-accent" },
+  { name: "Instagram Ads", desc: "Visual storytelling that converts for lifestyle brands", color: "bg-accent/10 text-accent" },
+  { name: "TikTok Ads", desc: "Engage younger demographics with viral content", color: "bg-secondary text-secondary-foreground" },
+  { name: "LinkedIn Ads", desc: "Target B2B decision-makers and professionals", color: "bg-accent/10 text-accent" },
 ];
 
 const comparisonData = [
