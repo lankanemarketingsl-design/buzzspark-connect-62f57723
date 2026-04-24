@@ -16,17 +16,23 @@ import RelatedArticles from "@/components/RelatedArticles";
 /* ── Table of Contents ── */
 const tocItems = [
   { id: "digital-audience", label: "Digital Audience in Sri Lanka — Why Now Is the Best Time" },
+  { id: "geographic-reach", label: "Geographic Reach — Advertising Beyond Colombo" },
   { id: "what-is", label: "What Is Advertising in Sri Lanka?" },
   { id: "types", label: "Types of Advertising Available in Sri Lanka" },
+  { id: "channel-comparison", label: "Channel Performance Comparison — All Channels Side by Side" },
   { id: "why-different", label: "Why BuzzConnect Is Different From Other Agencies" },
+  { id: "vs-typical-agency", label: "BuzzConnect vs Typical Agency — Direct Comparison" },
   { id: "direct-marketing", label: "Why Direct Marketing Outperforms Traditional Advertising" },
   { id: "comparison", label: "Direct Marketing vs Social Media — Full Comparison" },
   { id: "industries", label: "Industries We Serve" },
+  { id: "industry-channel", label: "Industry-by-Channel Advertising Recommendation" },
   { id: "results", label: "Real Campaign Results from BuzzConnect Clients" },
   { id: "cost", label: "Cost of Advertising in Sri Lanka" },
-  { id: "platforms", label: "Best Advertising Platforms in Sri Lanka in 2025" },
+  { id: "roi-benchmarks", label: "Advertising ROI — Industry Benchmarks" },
+  { id: "platforms", label: "Best Advertising Platforms in Sri Lanka in 2026" },
   { id: "choose-strategy", label: "How to Choose the Right Advertising Strategy" },
   { id: "how-it-works", label: "Step-by-Step: How a BuzzConnect Campaign Works" },
+  { id: "mistakes", label: "Common Advertising Mistakes Sri Lankan Businesses Make" },
   { id: "faq", label: "Frequently Asked Questions" },
 ];
 
@@ -69,9 +75,92 @@ const faqs = [
     a: "BuzzConnect provides campaign performance reports covering delivery statistics, open rates (for email campaigns), and click-through rates. Most importantly, you measure success by the number of inquiries, calls, messages, and website visits your campaign generates. We encourage clients to track every lead source so we can optimise future campaigns based on real conversion data.",
   },
   {
-    q: "Can BuzzConnect help me advertise to Sri Lankan audiences from overseas?",
-    a: "Yes. BuzzConnect works with overseas clients — including Sri Lankan expatriates running businesses back home, foreign companies entering the Sri Lankan market, and international organisations targeting local audiences. We handle all campaign setup and management remotely.",
+    q: "How often should I run advertising campaigns in Sri Lanka?",
+    a: "Consistency outperforms one-off campaigns significantly. Businesses running monthly campaigns build audience familiarity, improve results through optimisation, and maintain a continuous pipeline of leads and enquiries. BuzzConnect recommends a minimum of one campaign per month for sustained growth, with weekly bursts during peak buying seasons for your industry.",
   },
+  {
+    q: "What is the difference between advertising and direct marketing?",
+    a: "Advertising broadly refers to any paid communication promoting a business. Direct marketing is a specific form of advertising that delivers your message directly to individual verified contacts — bypassing mass media entirely. Direct marketing is more targeted, more measurable, and typically delivers better ROI for lead generation than traditional mass advertising approaches.",
+  },
+  {
+    q: "Can BuzzConnect create campaign content in Sinhala and Tamil?",
+    a: "Yes. BuzzConnect creates campaign content in English, Sinhala, and Tamil — and can target language-specific audience segments within the database. This is essential for campaigns targeting regional audiences where Sinhala or Tamil delivers significantly higher engagement than English.",
+  },
+  {
+    q: "How does BuzzConnect measure success and improve future campaigns?",
+    a: "BuzzConnect analyses every campaign after completion. If results are below expected benchmarks, the team identifies the likely cause — audience targeting, message, offer, timing, or channel selection — and recommends specific improvements for the next campaign. Performance history from each campaign is used to progressively improve subsequent results.",
+  },
+];
+
+/* ── Geographic Reach ── */
+const geographicReach = [
+  { region: "Colombo & Western Province", opp: "Largest urban professional audience. Highest purchasing power. Most competitive advertising environment." },
+  { region: "Kandy & Central Province", opp: "Strong education, retail, and tourism market. Growing digital adoption especially among younger demographics." },
+  { region: "Galle & Southern Province", opp: "Tourism and hospitality hub. High-value property market. Growing entrepreneurial base with strong purchasing power." },
+  { region: "Jaffna & Northern Province", opp: "Rapidly growing digital audience. Significantly underserved by most advertisers — lower competition, strong engagement rates." },
+  { region: "Matara, Kurunegala, Anuradhapura", opp: "Growing middle-class consumer market. SMS and WhatsApp deliver strong results where internet speed is more variable." },
+];
+
+/* ── Channel Performance Comparison ── */
+const channelComparison = [
+  { channel: "SMS Marketing", reach: "98% open rate", best: "Flash sales, urgent offers, appointments, time-sensitive promotions" },
+  { channel: "WhatsApp Marketing", reach: "85–95% open rate", best: "Personal outreach, bookings, high-value offers, real estate" },
+  { channel: "Email Marketing", reach: "28–35% open rate (LK)", best: "B2B, professionals, education, finance, complex offers" },
+  { channel: "Google Ads", reach: "Top search position", best: "High-intent buyers actively searching for your product or service" },
+  { channel: "Web Banner Ads", reach: "High impression volume", best: "Brand awareness, retargeting, visual product promotion on Findit.lk" },
+  { channel: "Facebook/Instagram", reach: "2–5% organic reach", best: "Consumer brand building, events, fashion, younger demographics" },
+  { channel: "TikTok Ads", reach: "High for 18–35 audience", best: "Fashion, food, entertainment, consumer product launches" },
+  { channel: "Television", reach: "Mass reach, no targeting", best: "National brand campaigns, FMCG, large consumer brands" },
+  { channel: "Radio", reach: "Regional mass reach", best: "Local awareness, commuter audience, regional campaigns" },
+  { channel: "Newspaper", reach: "35+ demographic", best: "Formal announcements, legal notices, recruitment ads" },
+];
+
+/* ── BuzzConnect vs Typical Agency ── */
+const vsTypicalAgency = [
+  { what: "Database", bc: "500,000+ verified Sri Lankan contacts — industry-segmented", typical: "Generic purchased lists with no verification" },
+  { what: "Channels", bc: "Email + SMS + WhatsApp + Web Banners + Google Ads + Social Media", typical: "1 or 2 channels only" },
+  { what: "Launch Speed", bc: "Campaign live within 48 hours of approval", typical: "2 to 3 weeks for typical agency" },
+  { what: "Targeting", bc: "Segmented by industry, location, job title, age, behaviour", typical: "Broad demographic only" },
+  { what: "Findit.lk Access", bc: "Exclusive placement on Sri Lanka's leading classified platform", typical: "No access" },
+  { what: "Reporting", bc: "Full analytics — open rates, click rates, leads generated, CPL", typical: "Impressions and reach only" },
+  { what: "Pricing", bc: "Fixed transparent packages with no hidden fees", typical: "Variable retainers with surprise charges" },
+  { what: "Industry Focus", bc: "Proven campaigns for hotels, real estate, education, finance, events", typical: "Generic approach" },
+];
+
+/* ── Industry-Channel Recommendation ── */
+const industryChannel = [
+  { industry: "Hotels & Tourism", primary: "Email to professionals & travel agents", secondary: "SMS for last-minute booking urgency" },
+  { industry: "Real Estate", primary: "Email to verified investor & buyer database", secondary: "WhatsApp for personalised property follow-up" },
+  { industry: "Education", primary: "Email to parents & working professionals", secondary: "SMS for intake deadline reminders" },
+  { industry: "Finance", primary: "Email to business owners & salaried staff", secondary: "WhatsApp for personal product enquiries" },
+  { industry: "Restaurants", primary: "WhatsApp to local consumer database", secondary: "SMS for daily specials & weekend promotions" },
+  { industry: "Events", primary: "Email for early registrations & awareness", secondary: "SMS for last-minute ticket urgency" },
+  { industry: "Recruitment", primary: "Email to professional & graduate database", secondary: "Findit.lk classifieds for job listings" },
+  { industry: "Healthcare", primary: "SMS to local area subscribers", secondary: "Email for service awareness campaigns" },
+  { industry: "Fashion & Retail", primary: "WhatsApp for product & collection launches", secondary: "Email for seasonal sales & loyalty campaigns" },
+  { industry: "Automotive", primary: "Email to professional & business owner base", secondary: "WhatsApp for test drive bookings & follow-up" },
+];
+
+/* ── ROI Benchmarks by Industry ── */
+const roiBenchmarks = [
+  { industry: "Real Estate", cpl: "LKR 2,500 – 8,000 per qualified property enquiry" },
+  { industry: "Finance & Investment", cpl: "LKR 2,000 – 7,000 per qualified financial product lead" },
+  { industry: "Hotels & Tourism", cpl: "LKR 500 – 2,000 per booking enquiry" },
+  { industry: "Education", cpl: "LKR 800 – 2,500 per student course enquiry" },
+  { industry: "Healthcare", cpl: "LKR 600 – 2,000 per patient appointment enquiry" },
+  { industry: "Automotive", cpl: "LKR 1,500 – 5,000 per qualified vehicle enquiry" },
+  { industry: "Events", cpl: "LKR 300 – 1,200 per ticket or registration lead" },
+  { industry: "Recruitment", cpl: "LKR 200 – 800 per qualified candidate application" },
+  { industry: "Restaurants", cpl: "LKR 150 – 600 per table reservation" },
+];
+
+/* ── Common Mistakes ── */
+const commonMistakes = [
+  { title: "Relying on a Single Channel", desc: "Businesses running only Facebook ads or one email campaign are severely limiting results. The most effective Sri Lankan advertisers run coordinated multi-channel campaigns — email and SMS together, or Google Ads combined with direct marketing follow-up. Each additional channel multiplies the impact of the others." },
+  { title: "No Dedicated Landing Page", desc: "Sending advertising traffic to your homepage is one of the most expensive mistakes in Sri Lankan digital marketing. A dedicated landing page with one clear offer and one call to action converts at 5 to 10 times the rate of a homepage — for the same advertising spend." },
+  { title: "Advertising Without a Specific Offer", desc: "'Visit our website' is not an advertising offer. 'Book a free consultation this week' is. 'Register before Friday for 20% off' is. Every campaign must have one specific, time-bound reason for the audience to act right now." },
+  { title: "Running One Campaign and Stopping", desc: "Advertising compounds over time. The first campaign delivers results. The second delivers more because the agency has learned what works. Businesses that run one campaign and stop are capturing perhaps 20% of the value that consistent campaigning would deliver." },
+  { title: "Slow Lead Follow-Up", desc: "Generating leads through advertising and then following up 2 to 3 days later wastes the entire investment. Sri Lankan consumers who submit an enquiry expect a response within 2 to 4 hours. Leads not contacted within the first hour convert at a fraction of the rate." },
 ];
 
 /* ── Industries ── */
@@ -214,6 +303,18 @@ const caseStudies = [
     campaign: "Email + WhatsApp to professional segments + Findit.lk job listings",
     results: ["3,000+ applications in 10 days", "All 50 positions filled within 21 days", "Cost per hire 40% lower than newspaper ads"],
   },
+  {
+    title: "Finance Company, Colombo",
+    objective: "Generate qualified leads for a new personal loan product targeting salaried professionals",
+    campaign: "Email campaign to salaried professionals database + SMS broadcast to verified consumers",
+    results: ["620+ loan enquiries received in 5 days", "180 qualified applications submitted", "Cost per qualified lead 60% lower than equivalent Google Ads"],
+  },
+  {
+    title: "Fashion Brand, Island-Wide Campaign",
+    objective: "Launch a new clothing collection and drive online sales nationwide",
+    campaign: "WhatsApp campaign to fashion-interested consumer database + email to past customer list",
+    results: ["900+ website visits within 48 hours of launch", "240 orders placed in the first week", "Revenue target achieved 11 days ahead of schedule"],
+  },
 ];
 
 /* ── Best platforms by category ── */
@@ -332,10 +433,10 @@ const AdvertisingSriLanka = () => {
       subtitle="Multi-channel advertising that combines email, WhatsApp, SMS, and high-traffic web placements to deliver measurable results within days — not months."
     >
       <SEOHead
-        title="Advertising in Sri Lanka | #1 Multi-Channel Ad Company"
-        description="The smarter way to do advertising in Sri Lanka. Reach 13M+ internet users via WhatsApp, SMS & email. Campaigns go live in just 48 hours. Get started today."
+        title="Advertising in Sri Lanka 2026 — #1 Multi-Channel Ad Company"
+        description="Advertising in Sri Lanka 2026 — multi-channel campaigns reaching 500,000+ verified contacts via Email, SMS, WhatsApp, Google Ads & banners. Live in 48 hours."
         canonical="/advertising-sri-lanka"
-        keywords="advertising sri lanka, advertising in sri lanka, best advertising company sri lanka, multi-channel advertising sri lanka, digital advertising sri lanka, online advertising sri lanka, advertising agency sri lanka, whatsapp marketing sri lanka, sms marketing sri lanka"
+        keywords="advertising sri lanka, advertising in sri lanka, best advertising company sri lanka, multi-channel advertising sri lanka, digital advertising sri lanka, online advertising sri lanka, advertising agency sri lanka, advertising cost sri lanka, types of advertising sri lanka, whatsapp marketing sri lanka, sms marketing sri lanka, email marketing sri lanka, advertising 2026 sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Advertising Sri Lanka", url: "/advertising-sri-lanka" },
@@ -366,6 +467,42 @@ const AdvertisingSriLanka = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Whether you're a small local business in Colombo, a large enterprise expanding island-wide, or an overseas company targeting Sri Lankan consumers — BuzzConnect gives you the reach, targeting, and results you need.
           </p>
+
+          {/* ── Why 2026 ── */}
+          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-accent/5 border border-accent/20">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">
+              Why 2026 Is the Best Time to Advertise Your Business in Sri Lanka
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              Sri Lanka's digital economy is growing faster than at any previous point in its history. Consumer behaviour has permanently shifted online — people research products, compare services, and make purchasing decisions through their phones <strong>before they ever speak to a salesperson</strong> or visit a business.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Early movers in digital advertising in Sri Lanka are already seeing <strong>4 to 6 times return</strong> on every rupee spent. The cost of not advertising is not zero — every month you are invisible, your competitors are not.
+            </p>
+          </div>
+
+          {/* ── What Actually Makes Advertising Work ── */}
+          <div className="mt-8">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-4">
+              What Actually Makes Advertising Work in Sri Lanka
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              After running thousands of campaigns across every major industry in Sri Lanka, BuzzConnect has identified the <strong>four factors</strong> that determine whether a campaign succeeds or fails:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { t: "The right audience", d: "Reaching people who can actually buy from you, not a broad general population" },
+                { t: "The right channel", d: "Using the platforms your audience actually uses and trusts in Sri Lanka" },
+                { t: "The right message", d: "One clear offer with a compelling, specific reason to act now" },
+                { t: "The right timing", d: "Reaching your audience when they are most receptive to your offer" },
+              ].map(it => (
+                <div key={it.t} className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border">
+                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div><strong className="text-foreground">{it.t}</strong> <span className="text-muted-foreground text-sm">— {it.d}</span></div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         {/* ── Table of Contents ── */}
@@ -412,6 +549,34 @@ const AdvertisingSriLanka = () => {
             <p className="text-foreground leading-relaxed">
               BuzzConnect helps you tap into this growing audience instantly, with campaigns that go live within <strong>48 hours of briefing</strong> and start generating real inquiries from day one.
             </p>
+          </div>
+        </motion.div>
+
+        {/* ── Geographic Reach ── */}
+        <motion.div id="geographic-reach" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            🗺️ Advertising in Sri Lanka Beyond Colombo — Island-Wide Reach
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            One of the biggest missed opportunities for Sri Lankan businesses is limiting advertising to the Western Province. Digital penetration is growing rapidly across every region — and the audiences <strong>outside Colombo are underserved</strong> by most agencies.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-4 font-heading font-bold text-foreground">Region</th>
+                  <th className="text-left p-4 font-heading font-bold text-foreground">Advertising Opportunity</th>
+                </tr>
+              </thead>
+              <tbody>
+                {geographicReach.map((row, i) => (
+                  <tr key={row.region} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-4 font-semibold text-foreground"><MapPin className="inline w-4 h-4 text-accent mr-2" />{row.region}</td>
+                    <td className="p-4 text-muted-foreground">{row.opp}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </motion.div>
 
@@ -505,6 +670,36 @@ const AdvertisingSriLanka = () => {
           </div>
         </motion.div>
 
+        {/* ── Channel Performance Comparison ── */}
+        <motion.div id="channel-comparison" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            📊 Channel Performance Comparison — All Advertising Channels in Sri Lanka (2026)
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Use this table to quickly identify which advertising channel matches your goal, audience, and expected results.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Channel</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Open / Reach Rate</th>
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Best For in Sri Lanka</th>
+                </tr>
+              </thead>
+              <tbody>
+                {channelComparison.map((row, i) => (
+                  <tr key={row.channel} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.channel}</td>
+                    <td className="p-3 text-foreground">{row.reach}</td>
+                    <td className="p-3 text-muted-foreground">{row.best}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </motion.div>
+
         {/* ── 4. Why BuzzConnect is Different ── */}
         <motion.div id="why-different" {...fadeIn} className="mb-16 scroll-mt-24">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
@@ -530,6 +725,36 @@ const AdvertisingSriLanka = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* ── BuzzConnect vs Typical Agency ── */}
+        <motion.div id="vs-typical-agency" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            ⚖️ BuzzConnect vs a Typical Sri Lankan Advertising Agency — Side-by-Side
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            See exactly how BuzzConnect compares against a typical advertising agency in Sri Lanka across the eight factors that matter most to your campaign results.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">What to Compare</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">BuzzConnect</th>
+                  <th className="text-left p-3 font-heading font-bold text-muted-foreground">Typical Agency</th>
+                </tr>
+              </thead>
+              <tbody>
+                {vsTypicalAgency.map((row, i) => (
+                  <tr key={row.what} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.what}</td>
+                    <td className="p-3 text-foreground">{row.bc}</td>
+                    <td className="p-3 text-muted-foreground">{row.typical}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </motion.div>
 
@@ -638,6 +863,36 @@ const AdvertisingSriLanka = () => {
           <p className="text-sm text-muted-foreground mt-6 italic">
             <strong>Other industries we serve:</strong> Vehicle sales and rentals, event management, fashion and lifestyle brands, logistics and freight, IT and technology services, government and public sector communications, NGOs and nonprofit organisations.
           </p>
+        </motion.div>
+
+        {/* ── Industry × Channel Recommendation ── */}
+        <motion.div id="industry-channel" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            🎯 Which Advertising Channel Works Best for Your Industry in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Each industry has its own audience behaviour. This table shows BuzzConnect's recommended primary and secondary channel for the most active sectors in Sri Lanka.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Industry</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Primary Channel</th>
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Secondary Channel</th>
+                </tr>
+              </thead>
+              <tbody>
+                {industryChannel.map((row, i) => (
+                  <tr key={row.industry} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.industry}</td>
+                    <td className="p-3 text-foreground">{row.primary}</td>
+                    <td className="p-3 text-muted-foreground">{row.secondary}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </motion.div>
 
         {/* ── 8. Real Campaign Results ── */}
@@ -769,10 +1024,43 @@ const AdvertisingSriLanka = () => {
           </div>
         </motion.div>
 
+        {/* ── ROI Benchmarks ── */}
+        <motion.div id="roi-benchmarks" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            📐 Advertising ROI Benchmarks by Industry in Sri Lanka
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-6">
+            Use these benchmarks to evaluate whether your advertising investment is delivering competitive returns. Compare your cost per lead (CPL) against your average customer lifetime value — a real estate lead at LKR 5,000 that converts into a property sale is exceptional value.
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-border shadow-card mb-6">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-primary/5">
+                  <th className="text-left p-3 font-heading font-bold text-foreground">Industry</th>
+                  <th className="text-left p-3 font-heading font-bold text-accent">Strong Cost Per Lead (LKR)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {roiBenchmarks.map((row, i) => (
+                  <tr key={row.industry} className={i % 2 === 0 ? "bg-card" : "bg-muted/30"}>
+                    <td className="p-3 font-semibold text-foreground">{row.industry}</td>
+                    <td className="p-3 text-foreground">{row.cpl}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="p-5 rounded-2xl bg-accent/5 border border-accent/20">
+            <p className="text-muted-foreground leading-relaxed text-sm">
+              💡 A student enquiry costing LKR 1,500 that enrols in a LKR 300,000 programme delivers a <strong>200x return on the lead cost</strong>. Always measure CPL against lifetime value, not just upfront cost.
+            </p>
+          </div>
+        </motion.div>
+
         {/* ── 10. Best Platforms ── */}
         <motion.div id="platforms" {...fadeIn} className="mb-16 scroll-mt-24">
           <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
-            🌐 10. Best Advertising Platforms in Sri Lanka in 2025
+            🌐 10. Best Advertising Platforms in Sri Lanka in 2026
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
             The advertising landscape in Sri Lanka is evolving rapidly. These are the platforms and channels delivering the strongest results for businesses advertising in Sri Lanka today.
@@ -861,6 +1149,48 @@ const AdvertisingSriLanka = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </motion.div>
+
+        {/* ── Common Mistakes ── */}
+        <motion.div id="mistakes" {...fadeIn} className="mb-16 scroll-mt-24">
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-4">
+            ⚠️ Common Advertising Mistakes Sri Lankan Businesses Make — And How to Avoid Them
+          </h2>
+          <p className="text-muted-foreground leading-relaxed mb-8">
+            Understanding what <em>not</em> to do is just as valuable as knowing the right strategy. These are the five most common mistakes BuzzConnect sees from businesses running their first advertising campaigns in Sri Lanka.
+          </p>
+          <div className="space-y-4">
+            {commonMistakes.map((m, i) => (
+              <div key={m.title} className="p-6 rounded-2xl bg-card border border-border shadow-card">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 rounded-xl bg-destructive/10 flex items-center justify-center flex-shrink-0">
+                    <span className="font-heading font-bold text-destructive">{i + 1}</span>
+                  </div>
+                  <div>
+                    <h3 className="font-heading text-lg font-bold text-foreground mb-2">Mistake {i + 1} — {m.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed text-sm">{m.desc}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 p-6 rounded-2xl bg-accent/5 border border-accent/20">
+            <p className="text-foreground font-semibold mb-2">How BuzzConnect helps you avoid every one of these mistakes:</p>
+            <ul className="space-y-2">
+              {[
+                "Multi-channel campaigns by default — never single-channel only",
+                "Landing page design available as part of campaign packages",
+                "Campaign strategists ensure every campaign has a compelling, specific offer",
+                "Monthly retainer programmes build consistent momentum and compounding results",
+                "Instant lead delivery to your team via email, WhatsApp, or CRM integration",
+              ].map(item => (
+                <li key={item} className="flex items-start gap-2 text-sm text-muted-foreground">
+                  <CheckCircle className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
           </div>
         </motion.div>
 
