@@ -294,21 +294,21 @@ const SocialMediaMarketing = () => {
           </div>
           <div className="p-5 rounded-xl bg-card border border-border">
             <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-              <Heart className="w-5 h-5 text-pink-500" />
+              <Heart className="w-5 h-5 text-accent" />
               Instagram Marketing
             </h4>
             <p className="text-sm text-muted-foreground">Ideal for lifestyle brands, hotels, fashion, beauty, and food businesses. Visual storytelling that converts.</p>
           </div>
           <div className="p-5 rounded-xl bg-card border border-border">
             <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-              <PlayCircle className="w-5 h-5 text-purple-500" />
+              <PlayCircle className="w-5 h-5 text-accent" />
               TikTok Marketing
             </h4>
             <p className="text-sm text-muted-foreground">Growing rapidly with massive reach. Best for viral content, younger audiences, and brand awareness.</p>
           </div>
           <div className="p-5 rounded-xl bg-card border border-border">
             <h4 className="font-semibold text-foreground mb-2 flex items-center gap-2">
-              <Globe2 className="w-5 h-5 text-sky-500" />
+              <Globe2 className="w-5 h-5 text-accent" />
               LinkedIn Marketing
             </h4>
             <p className="text-sm text-muted-foreground">Essential for B2B marketing. Best for corporate services, professional branding, and lead generation.</p>
