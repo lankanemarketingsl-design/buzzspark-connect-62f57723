@@ -10,71 +10,141 @@ const DigitalAdvertisingGuide = () => {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      headline: "Digital Advertising Sri Lanka: Complete Guide",
-      description: "A complete guide to digital advertising in Sri Lanka covering email, SMS, WhatsApp, social media and banner advertising strategies.",
+      headline: "Digital Advertising Sri Lanka: Complete Guide (2026)",
+      description: "Complete digital advertising guide for Sri Lanka 2026 — every channel, every cost, every strategy. Email, SMS, WhatsApp, web banners, Google Ads & social.",
       author: { "@type": "Organization", name: "Buzz Connect" },
       publisher: { "@type": "Organization", name: "Buzz Connect" },
-      datePublished: "2025-03-24",
+      datePublished: "2026-04-24",
     },
   ];
 
   return (
     <ServicePageLayout
-      badge="Digital Advertising"
-      title="Digital Advertising Sri Lanka: Complete Guide"
-      subtitle="Everything you need to know about digital advertising in Sri Lanka — channels, strategies, costs, and how to get started."
+      badge="Advertising Sri Lanka"
+      title="Digital Advertising Sri Lanka: Complete Guide (2026)"
+      subtitle="Every digital advertising channel, cost, and strategy you need to drive consistent, growing results for your Sri Lankan business."
     >
       <SEOHead
-        title="Digital Advertising Sri Lanka: Complete Guide | BuzzConnect"
-        description="Complete guide to digital advertising in Sri Lanka. Learn about email, SMS, WhatsApp, banner ads and social media advertising strategies for Sri Lankan businesses."
+        title="Digital Advertising Sri Lanka — Complete Guide (2026) | Buzz Connect"
+        description="Complete digital advertising guide Sri Lanka 2026 — 6 core channels, costs, strategies & how to build your campaign. Reach 500,000+ verified contacts."
         canonical="/digital-advertising-sri-lanka-complete-guide"
-        keywords="digital advertising sri lanka, online advertising guide, digital marketing sri lanka"
+        keywords="digital advertising sri lanka, online advertising guide sri lanka, digital marketing sri lanka"
         breadcrumbs={[
           { name: "Home", url: "/" },
           { name: "Resources", url: "/resources" },
-          { name: "Digital Advertising Guide", url: "/digital-advertising-sri-lanka-complete-guide" },
+          { name: "Digital Advertising Complete Guide", url: "/digital-advertising-sri-lanka-complete-guide" },
         ]}
         jsonLd={jsonLd}
       />
 
       <article className="max-w-4xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-          <img src={articleImage} alt="Digital advertising Sri Lanka guide" className="w-full rounded-2xl mb-8" loading="lazy" width={800} height={600} />
+          <img src={articleImage} alt="Digital advertising Sri Lanka complete guide" className="w-full rounded-2xl mb-8" loading="lazy" width={800} height={600} />
 
           <div className="prose prose-lg max-w-none text-muted-foreground">
             <p>
-              <strong>Digital advertising in Sri Lanka</strong> is transforming how businesses reach customers. This complete guide covers every channel, strategy, and best practice you need to succeed in the Sri Lankan market.
+              <strong>Digital advertising in Sri Lanka</strong> has matured rapidly. What was once limited to basic Facebook posts has evolved into a sophisticated, multi-channel ecosystem reaching hundreds of thousands of targeted Sri Lankans with measurable campaigns.
+            </p>
+            <p>
+              This complete guide covers every dimension. For an even broader overview of all advertising types, see{" "}
+              <Link to="/what-is-advertising-sri-lanka" className="text-accent hover:underline font-semibold">what is advertising in Sri Lanka</Link>.
             </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">What is Digital Advertising?</h2>
-            <p>
-              Digital advertising uses online platforms and digital communication channels to promote products and services. In Sri Lanka, the most effective digital advertising channels include email marketing, SMS campaigns, WhatsApp marketing, banner ads, and social media.
+            <p>Any paid promotion through digital channels. Unlike traditional, digital is:</p>
+            <ul className="space-y-2 my-4">
+              <li>✅ Targeted — choose exactly who sees your message</li>
+              <li>✅ Measurable — every click, open, conversion tracked</li>
+              <li>✅ Adjustable — change campaigns in real time</li>
+              <li>✅ Scalable — start small, grow as results prove</li>
+              <li>✅ Fast — live within 24-48 hours</li>
+            </ul>
+
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">The 6 Core Digital Advertising Channels</h2>
+
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">1. Email Marketing</h3>
+            <p>Most cost-effective channel for B2B and professional audiences. 28-35% open rates, 4-6x ROI.{" "}
+              <Link to="/email-marketing" className="text-accent hover:underline font-semibold">See Buzz Connect's email marketing service</Link>.
             </p>
 
-            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Top Digital Advertising Channels in Sri Lanka</h2>
-            <ul className="space-y-2 my-4">
-              <li>📧 <strong>Email Marketing</strong> — <li>📧 <strong>Email Marketing</strong> — Reach 350,000+ subscribers with targeted campaigns</li> with targeted campaigns</li>
-              <li>📱 <strong>SMS Marketing</strong> — 90%+ open rates for instant engagement</li>
-              <li>💬 <strong>WhatsApp Marketing</strong> — Direct, personal communication with customers</li>
-              <li>🖥️ <strong>Banner Advertising</strong> — Premium visibility on Findit.lk</li>
-              <li>📲 <strong>Social Media</strong> — Build brand awareness on Facebook, Instagram, TikTok</li>
-            </ul>
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">2. SMS Marketing</h3>
+            <p>Highest open rates of any channel — above 90%. Best for time-sensitive offers.{" "}
+              <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">Learn about SMS marketing in Sri Lanka</Link>.
+            </p>
+
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">3. WhatsApp Marketing</h3>
+            <p>Personalised, media-rich messages with high engagement.{" "}
+              <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">Discover WhatsApp marketing</Link>.
+            </p>
+
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">4. Web Banner Advertising</h3>
+            <p>Visual display ads on Findit.lk and partner sites.{" "}
+              <Link to="/web-banner-advertising-sri-lanka" className="text-accent hover:underline font-semibold">See web banner advertising</Link>.
+            </p>
+
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">5. Google Ads</h3>
+            <p>Top-of-search placement for high-intent customers.{" "}
+              <Link to="/google-ads-sri-lanka" className="text-accent hover:underline font-semibold">Explore Google Ads for Sri Lankan businesses</Link>.
+            </p>
+
+            <h3 className="font-heading text-xl font-semibold text-foreground mt-6 mb-3">6. Social Media Advertising</h3>
+            <p>Facebook, Instagram, LinkedIn for consumer brand awareness.{" "}
+              <Link to="/social-media-marketing-sri-lanka" className="text-accent hover:underline font-semibold">Read the social media marketing guide</Link>.
+            </p>
+
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Digital Advertising Strategy by Business Stage</h2>
+            <div className="overflow-x-auto my-6">
+              <table className="w-full border-collapse border border-border">
+                <thead className="bg-muted">
+                  <tr>
+                    <th className="border border-border p-3 text-left text-foreground">Business Stage</th>
+                    <th className="border border-border p-3 text-left text-foreground">Recommended Strategy</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td className="border border-border p-3">New — Building Awareness</td><td className="border border-border p-3">Email + SMS to targeted database. Web banners. Google Ads for search.</td></tr>
+                  <tr><td className="border border-border p-3">Growing — Generating Leads</td><td className="border border-border p-3">Multi-channel email + SMS + web banners. Google Ads for competitive keywords.</td></tr>
+                  <tr><td className="border border-border p-3">Established — Scaling</td><td className="border border-border p-3">Full multi-channel + retargeting. SEO alongside paid.</td></tr>
+                  <tr><td className="border border-border p-3">Seasonal — Campaign Peaks</td><td className="border border-border p-3">High-intensity email + SMS bursts during booking windows.</td></tr>
+                  <tr><td className="border border-border p-3">All — Retargeting</td><td className="border border-border p-3">Web banner retargeting + email follow-up to clickers.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Digital vs Traditional</h2>
+            <p>
+              See our dedicated comparison:{" "}
+              <Link to="/online-vs-traditional-advertising-sri-lanka" className="text-accent hover:underline font-semibold">online advertising vs traditional advertising in Sri Lanka</Link>.
+              In summary: digital wins on targeting, measurability, speed, and ROI for most businesses.
+            </p>
 
             <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">How Much Does Digital Advertising Cost?</h2>
             <p>
-              Digital advertising in Sri Lanka is surprisingly affordable. Digital advertising in Sri Lanka is surprisingly affordable. Banner ads start from LKR 5,000, email campaigns from LKR 4,000, and comprehensive multi-channel packages are available for businesses of all sizes., and comprehensive multi-channel packages are available for businesses of all sizes.
+              See the full{" "}
+              <Link to="/advertising-cost-sri-lanka" className="text-accent hover:underline font-semibold">advertising cost guide for Sri Lanka</Link>.
+              Email starts from LKR 25,000, Google Ads from LKR 50,000, multi-channel from LKR 100,000.
             </p>
 
-            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Getting Started</h2>
+            <h2 className="font-heading text-2xl font-bold text-foreground mt-8 mb-4">Why Buzz Connect Leads Digital Advertising in Sri Lanka</h2>
+            <ul className="space-y-2 my-4">
+              <li>✅ 500,000+ verified Sri Lankan contacts</li>
+              <li>✅ Web banner advertising on Findit.lk</li>
+              <li>✅ Full Google Ads management</li>
+              <li>✅ Social media advertising on FB, IG, LinkedIn</li>
+              <li>✅ Multi-channel coordination under one strategy</li>
+              <li>✅ Industry specialists for hotels, real estate, education, finance & more</li>
+            </ul>
+
             <p>
-              The key to successful digital advertising is choosing the right partner. Look for an agency that offers multi-channel solutions, has local market expertise, and can show proven results.
+              Read why we are the{" "}
+              <Link to="/best-advertising-company-sri-lanka" className="text-accent hover:underline font-semibold">best advertising company in Sri Lanka</Link>{" "}
+              and explore the full range of{" "}
+              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">advertising services in Sri Lanka</Link>.
             </p>
 
             <p className="mt-8">
-              👉 Start your digital advertising journey with{" "}
-              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">
-                advertising in Sri Lanka
-              </Link>
+              👉 Launch your digital advertising campaign —{" "}
+              <Link to="/advertising-sri-lanka" className="text-accent hover:underline font-semibold">get started today</Link>.
             </p>
           </div>
         </motion.div>
