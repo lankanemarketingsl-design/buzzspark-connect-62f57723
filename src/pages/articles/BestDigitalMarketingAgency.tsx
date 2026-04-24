@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import SEOHead from "@/components/SEOHead";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedArticles from "@/components/RelatedArticles";
+import StrategyCallForm from "@/components/StrategyCallForm";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const BestDigitalMarketingAgency = () => {
@@ -85,6 +86,11 @@ const BestDigitalMarketingAgency = () => {
             <p className="text-muted-foreground mb-8">
               In today's competitive landscape, simply having a website or a social media presence is not enough. Businesses need a data-driven, multi-channel digital marketing strategy that reaches the right audience at the right time with the right message. This 2026 guide explains what makes an agency the best, what services you should expect, how to choose the right partner, and why results, strategy and execution matter more than promises.
             </p>
+
+            {/* Top CTA */}
+            <div className="mb-12 not-prose">
+              <StrategyCallForm />
+            </div>
 
             <section className="mb-10">
               <h2 className="text-2xl font-bold text-foreground mb-4">What Makes the Best Digital Marketing Agency in Sri Lanka?</h2>
@@ -370,18 +376,11 @@ const BestDigitalMarketingAgency = () => {
                 If you are serious about scaling your business in 2026, investing in the right digital marketing partner is one of the smartest decisions you can make.
               </p>
 
-              <div className="bg-gradient-to-br from-primary/15 to-accent/10 border border-primary/20 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">Ready to grow with Sri Lanka's top digital marketing agency?</h3>
-                <p className="text-muted-foreground mb-4">
-                  Get a free strategy consultation and a custom multi-channel growth plan tailored to your business.
-                </p>
-                <Link
-                  to="/contact-us"
-                  className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:bg-primary/90 transition"
-                >
-                  Get Your Free Strategy Call →
-                </Link>
-              </div>
+            </section>
+
+            {/* Bottom CTA */}
+            <section className="mb-10 not-prose">
+              <StrategyCallForm />
             </section>
 
             <RelatedArticles currentPath="/best-digital-marketing-agency-sri-lanka" />
