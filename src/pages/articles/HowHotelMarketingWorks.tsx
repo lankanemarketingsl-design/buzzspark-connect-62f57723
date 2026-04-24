@@ -56,7 +56,7 @@ const HowHotelMarketingWorks = () => {
                 </Link>.
               </p>
               <p className="text-muted-foreground">
-                Working with an expert <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> ensures your property stands out in a competitive market.
+                Working with an expert <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing agency</Link> ensures your property stands out in a competitive market.
               </p>
             </section>
 

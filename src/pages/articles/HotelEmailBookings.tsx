@@ -63,7 +63,7 @@ const HotelEmailBookings = () => {
             The hospitality industry in Sri Lanka is highly competitive, with hotels and travel businesses constantly looking for ways to increase bookings and attract guests.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Working with a professional <Link to="/hotel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> can help you reach more travelers and maximize revenue.
+            Working with a professional <Link to="/hotel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">hotel marketing agency</Link> can help you reach more travelers and maximize revenue.
           </p>
           <p className="text-lg text-muted-foreground leading-relaxed">
             <Link to="/email-marketing" className="text-accent hover:underline font-semibold">Email marketing</Link> is one of the most effective tools to promote offers, engage travelers, and drive direct bookings.
