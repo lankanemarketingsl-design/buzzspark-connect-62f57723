@@ -693,12 +693,17 @@ const Resources = () => {
               to={a.path}
               className="group flex flex-col rounded-2xl bg-card border border-border hover:border-accent/30 hover:shadow-xl transition-all h-full overflow-hidden"
             >
-              <div className="aspect-[16/9] overflow-hidden">
+              <div className="aspect-[16/9] overflow-hidden bg-muted">
                 <img
                   src={a.image}
                   alt={a.title}
+                  width={720}
+                  height={405}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
+                  loading={i < 3 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchPriority={i < 3 ? "high" : "low"}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-5 flex flex-col flex-1">
