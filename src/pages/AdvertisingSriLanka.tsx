@@ -433,8 +433,8 @@ const AdvertisingSriLanka = () => {
       subtitle="Multi-channel advertising that combines email, WhatsApp, SMS, and high-traffic web placements to deliver measurable results within days — not months."
     >
       <SEOHead
-        title="Advertising in Sri Lanka 2026 — #1 Multi-Channel Ad Company"
-        description="Advertising in Sri Lanka 2026 — multi-channel campaigns reaching 500,000+ verified contacts via Email, SMS, WhatsApp, Google Ads & banners. Live in 48 hours."
+        title="Advertising in Sri Lanka"
+        description="Advertising Sri Lanka by Buzz Connect — email, SMS, WhatsApp, web banners, and Google Ads. Reach 500,000+ verified Sri Lankans. Campaigns live in 48 hours."
         canonical="/advertising-sri-lanka"
         keywords="advertising sri lanka, advertising in sri lanka, best advertising company sri lanka, multi-channel advertising sri lanka, digital advertising sri lanka, online advertising sri lanka, advertising agency sri lanka, advertising cost sri lanka, types of advertising sri lanka, whatsapp marketing sri lanka, sms marketing sri lanka, email marketing sri lanka, advertising 2026 sri lanka"
         breadcrumbs={[
