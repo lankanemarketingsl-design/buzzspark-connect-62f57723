@@ -681,6 +681,7 @@ const HotelMarketing = () => {
             <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
           </a>
         </div>
+      </motion.div>
 
       {/* Hotel PPC Advertising Sri Lanka */}
       <motion.section initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
