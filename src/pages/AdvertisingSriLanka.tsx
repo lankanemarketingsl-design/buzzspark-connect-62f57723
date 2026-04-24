@@ -467,6 +467,42 @@ const AdvertisingSriLanka = () => {
           <p className="text-lg text-muted-foreground leading-relaxed">
             Whether you're a small local business in Colombo, a large enterprise expanding island-wide, or an overseas company targeting Sri Lankan consumers — BuzzConnect gives you the reach, targeting, and results you need.
           </p>
+
+          {/* ── Why 2026 ── */}
+          <div className="mt-8 p-6 sm:p-8 rounded-2xl bg-accent/5 border border-accent/20">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-3">
+              Why 2026 Is the Best Time to Advertise Your Business in Sri Lanka
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              Sri Lanka's digital economy is growing faster than at any previous point in its history. Consumer behaviour has permanently shifted online — people research products, compare services, and make purchasing decisions through their phones <strong>before they ever speak to a salesperson</strong> or visit a business.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Early movers in digital advertising in Sri Lanka are already seeing <strong>4 to 6 times return</strong> on every rupee spent. The cost of not advertising is not zero — every month you are invisible, your competitors are not.
+            </p>
+          </div>
+
+          {/* ── What Actually Makes Advertising Work ── */}
+          <div className="mt-8">
+            <h2 className="font-heading text-xl sm:text-2xl font-bold text-foreground mb-4">
+              What Actually Makes Advertising Work in Sri Lanka
+            </h2>
+            <p className="text-muted-foreground leading-relaxed mb-4">
+              After running thousands of campaigns across every major industry in Sri Lanka, BuzzConnect has identified the <strong>four factors</strong> that determine whether a campaign succeeds or fails:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {[
+                { t: "The right audience", d: "Reaching people who can actually buy from you, not a broad general population" },
+                { t: "The right channel", d: "Using the platforms your audience actually uses and trusts in Sri Lanka" },
+                { t: "The right message", d: "One clear offer with a compelling, specific reason to act now" },
+                { t: "The right timing", d: "Reaching your audience when they are most receptive to your offer" },
+              ].map(it => (
+                <div key={it.t} className="flex items-start gap-3 p-4 rounded-xl bg-card border border-border">
+                  <CheckCircle className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <div><strong className="text-foreground">{it.t}</strong> <span className="text-muted-foreground text-sm">— {it.d}</span></div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         {/* ── Table of Contents ── */}
