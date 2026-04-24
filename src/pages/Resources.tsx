@@ -47,6 +47,41 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "What is Advertising in Sri Lanka? Complete Guide for Businesses (2026)",
+    date: "Apr 24, 2026",
+    excerpt: "Every type of advertising available in Sri Lanka — digital, direct, traditional, multi-channel. Learn which channels work for which goals.",
+    path: "/what-is-advertising-sri-lanka",
+    image: articleBestAdvertising,
+  },
+  {
+    title: "Types of Advertising in Sri Lanka: Which One is Right for You?",
+    date: "Apr 24, 2026",
+    excerpt: "8 main types of advertising in Sri Lanka — email, SMS, WhatsApp, web banners, Google Ads, social media, multi-channel & traditional.",
+    path: "/types-of-advertising-sri-lanka",
+    image: articleDigitalAdGuide,
+  },
+  {
+    title: "Advertising Cost in Sri Lanka (2026 Pricing Guide)",
+    date: "Apr 24, 2026",
+    excerpt: "Real advertising costs in Sri Lanka 2026 — by channel, industry & business size. Email from LKR 25K, multi-channel from LKR 100K.",
+    path: "/advertising-cost-sri-lanka",
+    image: articleGoogleAdsCost,
+  },
+  {
+    title: "How to Advertise Your Business in Sri Lanka: Step-by-Step Guide",
+    date: "Apr 24, 2026",
+    excerpt: "8-step process for launching effective advertising in Sri Lanka — audience, goal, channels, budget, message, landing page, launch & optimise.",
+    path: "/how-to-advertise-business-sri-lanka",
+    image: articleMultichannelCampaigns,
+  },
+  {
+    title: "Advertising Sri Lanka: How to Reach 500,000+ People Fast",
+    date: "Apr 24, 2026",
+    excerpt: "How Buzz Connect's mass-reach advertising delivers your message to 500,000+ verified Sri Lankans within 24-48 hours of brief.",
+    path: "/advertising-reach-sri-lanka",
+    image: articleMultichannelReach,
+  },
+  {
     title: "Best Lead Generation Company in Sri Lanka (2026 Guide)",
     date: "Apr 23, 2026",
     excerpt: "What separates the best lead generation companies in Sri Lanka — verified database, multi-channel reach, industry experience and qualified leads with transparent reporting.",

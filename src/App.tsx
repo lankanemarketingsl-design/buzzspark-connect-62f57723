@@ -103,6 +103,11 @@ import BestWebsiteDesignCompany from "./pages/articles/BestWebsiteDesignCompany.
 import BestGoogleAdsAgency from "./pages/articles/BestGoogleAdsAgency.tsx";
 import BestLeadGenerationCompany from "./pages/articles/BestLeadGenerationCompany.tsx";
 import LeadGenerationCost from "./pages/articles/LeadGenerationCost.tsx";
+import WhatIsAdvertisingSriLanka from "./pages/articles/WhatIsAdvertisingSriLanka.tsx";
+import TypesOfAdvertisingSriLanka from "./pages/articles/TypesOfAdvertisingSriLanka.tsx";
+import AdvertisingCostSriLanka from "./pages/articles/AdvertisingCostSriLanka.tsx";
+import HowToAdvertiseBusinessSriLanka from "./pages/articles/HowToAdvertiseBusinessSriLanka.tsx";
+import AdvertisingReachSriLanka from "./pages/articles/AdvertisingReachSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
 import WhyChooseUs from "./pages/WhyChooseUs.tsx";
@@ -201,6 +206,11 @@ const App = () => (
               <Route path="/real-estate-marketing-generate-property-leads-sri-lanka" element={<RealEstateMarketingPropertyLeads />} />
               <Route path="/fashion-marketing-grow-brand-sri-lanka" element={<FashionMarketingGrowBrand />} />
               <Route path="/best-advertising-company-sri-lanka" element={<BestAdvertisingCompanySriLanka />} />
+              <Route path="/what-is-advertising-sri-lanka" element={<WhatIsAdvertisingSriLanka />} />
+              <Route path="/types-of-advertising-sri-lanka" element={<TypesOfAdvertisingSriLanka />} />
+              <Route path="/advertising-cost-sri-lanka" element={<AdvertisingCostSriLanka />} />
+              <Route path="/how-to-advertise-business-sri-lanka" element={<HowToAdvertiseBusinessSriLanka />} />
+              <Route path="/advertising-reach-sri-lanka" element={<AdvertisingReachSriLanka />} />
               <Route path="/digital-advertising-sri-lanka-complete-guide" element={<DigitalAdvertisingGuide />} />
               <Route path="/online-vs-traditional-advertising-sri-lanka" element={<OnlineVsTraditionalAdvertising />} />
               <Route path="/google-ads-sri-lanka-cost-guide" element={<GoogleAdsCostGuide />} />
