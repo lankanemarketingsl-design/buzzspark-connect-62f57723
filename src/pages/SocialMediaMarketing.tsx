@@ -133,7 +133,7 @@ const SocialMediaMarketing = () => {
     <ServicePageLayout
       badge="Social Media Marketing Sri Lanka"
       title="Social Media Marketing That Builds Brands — and Drives Results"
-      subtitle="Targeted campaigns across Facebook, Instagram & TikTok to grow your brand, engage customers, and generate real business results."
+      subtitle="Targeted campaigns across Facebook, Instagram & TikTok — starting from LKR 50,000. Multi-platform reach with Findit.lk integration."
     >
       <SEOHead
         title="Social Media Marketing Sri Lanka | Top Agency for Leads & Growth"
