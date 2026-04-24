@@ -42,7 +42,7 @@ const HotelMarketingIncreaseBookings = () => {
               The hotel industry in Sri Lanka is highly competitive, especially with the growth of tourism and online booking platforms. To stand out, hotels need a strong digital marketing strategy that reaches both international and local travelers.
             </p>
             <p className="text-muted-foreground leading-relaxed mt-4">
-              Working with a professional <Link to="/hotel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> can help you implement effective strategies to increase bookings and revenue.
+              Working with a professional <Link to="/hotel-marketing-sri-lanka" className="text-accent hover:underline font-semibold">best hotel marketing agency Sri Lanka</Link> can help you implement effective strategies to increase bookings and revenue.
             </p>
           </div>
 
