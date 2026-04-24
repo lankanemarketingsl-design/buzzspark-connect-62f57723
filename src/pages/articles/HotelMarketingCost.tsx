@@ -43,6 +43,9 @@ const HotelMarketingCost = () => {
               <p className="text-muted-foreground mb-4">
                 Whether you run a boutique hotel, villa, or resort, understanding marketing costs helps you plan better and maximize bookings.
               </p>
+              <p className="text-muted-foreground mb-4">
+                Partnering with an experienced <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> ensures you get the best ROI from your marketing budget.
+              </p>
               <p className="text-muted-foreground">
                 👉 Explore full{" "}
                 <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing services in Sri Lanka</Link>.
