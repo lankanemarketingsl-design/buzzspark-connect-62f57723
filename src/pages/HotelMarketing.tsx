@@ -681,9 +681,177 @@ const HotelMarketing = () => {
             <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
           </a>
         </div>
-      </motion.div>
+
+      {/* Hotel PPC Advertising Sri Lanka */}
+      <motion.section initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="rounded-2xl bg-gradient-to-br from-primary/10 via-card to-accent/10 border border-border shadow-card p-6 sm:p-10">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-primary/15 flex items-center justify-center">
+              <Target className="w-6 h-6 text-primary" />
+            </div>
+            <span className="text-xs font-bold uppercase tracking-wider text-primary">Paid Advertising</span>
+          </div>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Hotel PPC Advertising Sri Lanka</h2>
+          <p className="text-muted-foreground mb-4">
+            Every day, thousands of travellers search "hotels in Colombo," "beach resorts Sri Lanka," or "luxury stays Galle" on Google. Are they finding your hotel — or your competitors? Our Hotel PPC Advertising service ensures your property appears at the top of search results at the exact moment a guest is ready to book. Stop giving away 15–25% of your revenue to OTAs. Own your direct booking pipeline.
+          </p>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-3">What Is Hotel PPC Advertising?</h3>
+          <p className="text-muted-foreground mb-4">
+            PPC (Pay-Per-Click) means you only pay when a potential guest clicks your ad. With the right strategy, every rupee reaches high-intent travellers — not random browsers. We manage your full campaign so you get maximum bookings at the lowest possible cost per acquisition.
+          </p>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-4">Our Hotel PPC Services</h3>
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            {[
+              { t: "Google Search Ads for Hotels", d: "Appear at the top of Google when travellers search for hotels in your location or category. We research the highest-converting keywords and build campaigns that drive direct bookings consistently." },
+              { t: "Google Hotel Ads (Metasearch)", d: "Get your hotel listed inside Google's hotel panel with real-time rates and availability. Travellers see your direct rate — often lower than OTAs — and book with you directly." },
+              { t: "Remarketing / Retargeting", d: "Re-engage visitors who checked your website but left without booking. Targeted ads across Google and the Display Network bring them back to complete the reservation." },
+              { t: "Seasonal & Event-Based Campaigns", d: "Sri Lanka has clear travel peaks — Colombo business travel, Galle beach season, Esala Perahera, New Year holidays. We time campaigns to peak demand so your budget works hardest." },
+              { t: "YouTube & Display Advertising", d: "Reach travellers researching trips on YouTube and travel websites. Awareness campaigns put your hotel's visuals in front of the right audience before they compare prices." },
+              { t: "Landing Page Conversion Advice", d: "Clicks mean nothing without conversions. We review your booking page and advise improvements so more visitors complete their reservation." },
+            ].map((item) => (
+              <div key={item.t} className="p-4 rounded-xl bg-card border border-border">
+                <h4 className="font-heading font-semibold text-foreground mb-1.5 flex items-center gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0" />{item.t}</h4>
+                <p className="text-sm text-muted-foreground">{item.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-3">Why Hotels Choose Buzz Connect for PPC</h3>
+          <ul className="space-y-2 mb-6">
+            {[
+              "We Know Sri Lanka's Travel Market — local & international segments, peak seasons, and search behaviour",
+              "Data-Driven, ROI-Focused — every campaign tracked end-to-end with clear ROAS reporting",
+              "We Reduce OTA Dependency — more direct bookings, less reliance on Booking.com, Agoda & Expedia",
+              "Dedicated Campaign Manager — one expert who knows your property, not a rotating support team",
+              "Full Transparency — monthly reports in plain language, no hidden fees, no jargon",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" /><span>{item}</span></li>
+            ))}
+          </ul>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-4">How It Works</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+            {[
+              { s: "1", t: "Free Strategy Call", d: "We learn about your hotel, target guests, peak seasons, and booking channels." },
+              { s: "2", t: "Campaign Build", d: "We research keywords, write ad copy, set targeting, and launch within days." },
+              { s: "3", t: "Optimise & Scale", d: "Daily monitoring and continuous testing to bring down cost per booking." },
+              { s: "4", t: "Monthly Reporting", d: "Clear monthly report on bookings, CPA, ROAS, and what's next." },
+            ].map((step) => (
+              <div key={step.s} className="p-4 rounded-xl bg-card border border-border">
+                <div className="w-8 h-8 rounded-full bg-primary text-primary-foreground font-bold flex items-center justify-center mb-2">{step.s}</div>
+                <h4 className="font-heading font-semibold text-foreground mb-1">{step.t}</h4>
+                <p className="text-sm text-muted-foreground">{step.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-xl bg-primary/10 border border-primary/30 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <h4 className="font-heading text-lg font-bold text-foreground">Ready to Stop Paying OTA Commissions?</h4>
+              <p className="text-sm text-muted-foreground">Book your free strategy call — no obligation, no pressure.</p>
+            </div>
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20to%20discuss%20Hotel%20PPC%20Advertising%20for%20my%20property." target="_blank" rel="noopener noreferrer">
+              <Button className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold whitespace-nowrap"><MessageSquare className="w-4 h-4 mr-2" />WhatsApp Us Now</Button>
+            </a>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Hotel Social Media Marketing Sri Lanka */}
+      <motion.section initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-5xl mx-auto">
+        <div className="rounded-2xl bg-gradient-to-br from-accent/10 via-card to-primary/10 border border-border shadow-card p-6 sm:p-10">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="w-12 h-12 rounded-xl bg-accent/15 flex items-center justify-center">
+              <Star className="w-6 h-6 text-accent" />
+            </div>
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">Social Media</span>
+          </div>
+          <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground mb-3">Hotel Social Media Marketing Sri Lanka</h2>
+          <p className="text-muted-foreground italic mb-3">Turn Scrollers into Guests.</p>
+          <p className="text-muted-foreground mb-4">
+            Today's travellers choose their hotel on Instagram before they ever visit a booking site. A stunning Reel of your infinity pool, a golden-hour photo of your beachfront restaurant, a TikTok of the view from your best room — these are the moments that make travellers stop scrolling and start booking. We build and manage your hotel's social presence so your team focuses on running the hotel while we fill the rooms.
+          </p>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-4">Our Hotel Social Media Services</h3>
+          <div className="grid sm:grid-cols-2 gap-4 mb-6">
+            {[
+              { t: "Strategy & Content Planning", d: "Monthly content calendar tailored to your brand, target guests, and travel season. Every post has a purpose — awareness, engagement, or booking intent." },
+              { t: "Instagram & Facebook Management", d: "Professional posts, captions, hashtag research, Story scheduling, and community management — all handled by our team." },
+              { t: "Reels & TikTok Video Content", d: "Scroll-stopping short-form video showcasing your rooms, food, location, and guest experiences — designed to reach thousands organically." },
+              { t: "Photography & Video Direction", d: "Creative direction for your shoots so every piece of content looks professional, on-brand, and scroll-stopping." },
+              { t: "Travel Influencer Campaigns", d: "We connect your hotel with Sri Lanka's top travel influencers and international creators whose audiences match your ideal guest." },
+              { t: "Paid Social Advertising", d: "Targeted Facebook & Instagram Ads reaching travellers by location, interest, travel intent, and demographics." },
+              { t: "Guest Review & UGC Management", d: "Encourage, collect, and showcase user-generated content from happy guests — building social proof no budget can replicate." },
+              { t: "Google Business Profile Management", d: "Fresh photos, review responses, Q&A, and accurate info — boosting your local and organic discovery." },
+            ].map((item) => (
+              <div key={item.t} className="p-4 rounded-xl bg-card border border-border">
+                <h4 className="font-heading font-semibold text-foreground mb-1.5 flex items-center gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0" />{item.t}</h4>
+                <p className="text-sm text-muted-foreground">{item.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-4">Platforms We Manage</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-6">
+            {[
+              { t: "Instagram", d: "Visual storytelling, Reels, Stories, influencer collaborations, and community engagement." },
+              { t: "Facebook", d: "Community building, event promotion, targeted advertising, and direct messaging." },
+              { t: "TikTok", d: "Short-form video reaching a fast-growing, experience-driven travel audience." },
+              { t: "Google Business Profile", d: "Reviews, photo updates, Q&A, and information management for Google Search & Maps visibility." },
+            ].map((p) => (
+              <div key={p.t} className="p-4 rounded-xl bg-card border border-border">
+                <h4 className="font-heading font-semibold text-foreground mb-1">{p.t}</h4>
+                <p className="text-sm text-muted-foreground">{p.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-3">What You Can Expect</h3>
+          <ul className="space-y-2 mb-6">
+            {[
+              "Growing, relevant followers — genuinely interested in travel and Sri Lanka",
+              "Higher engagement — likes, comments, saves, shares, and DMs from real potential guests",
+              "More website traffic driven straight to your direct booking page",
+              "Stronger brand recognition — the first name travellers think of when planning Sri Lanka",
+              "Direct bookings & inquiries — social media that converts, not just builds an audience",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-2 text-muted-foreground"><CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" /><span>{item}</span></li>
+            ))}
+          </ul>
+
+          <h3 className="font-heading text-xl font-bold text-foreground mt-6 mb-4">Our Process</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-6">
+            {[
+              { s: "1", t: "Audit", d: "Review your current presence and competitors." },
+              { s: "2", t: "Strategy", d: "Content pillars, schedule, audience, and paid plan." },
+              { s: "3", t: "Create & Publish", d: "Direction, graphics, captions, hashtags — daily posting." },
+              { s: "4", t: "Community", d: "Reply to comments, DMs, and reviews in your hotel's voice." },
+              { s: "5", t: "Report", d: "Monthly growth, engagement, reach, and traffic insights." },
+            ].map((step) => (
+              <div key={step.s} className="p-4 rounded-xl bg-card border border-border">
+                <div className="w-8 h-8 rounded-full bg-accent text-white font-bold flex items-center justify-center mb-2">{step.s}</div>
+                <h4 className="font-heading font-semibold text-foreground mb-1">{step.t}</h4>
+                <p className="text-sm text-muted-foreground">{step.d}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="rounded-xl bg-accent/10 border border-accent/30 p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div>
+              <h4 className="font-heading text-lg font-bold text-foreground">Your Hotel Has a Story Worth Telling. Let's Tell It.</h4>
+              <p className="text-sm text-muted-foreground">Get your free social media audit today.</p>
+            </div>
+            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Social%20Media%20Audit%20for%20my%20hotel." target="_blank" rel="noopener noreferrer">
+              <Button className="bg-accent hover:bg-accent/90 text-white font-bold whitespace-nowrap"><MessageSquare className="w-4 h-4 mr-2" />Get Free Audit</Button>
+            </a>
+          </div>
+        </div>
+      </motion.section>
 
       {/* FAQ */}
+
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 max-w-3xl mx-auto">
         <h2 className="font-heading text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">Frequently Asked Questions – Hotel Marketing Sri Lanka</h2>
         <div className="space-y-4">
