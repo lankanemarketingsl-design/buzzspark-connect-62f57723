@@ -62,7 +62,7 @@ const HotelDigitalMarketingCaseStudies = () => {
                 <a href="/hotel-marketing-sri-lanka" className="text-muted-foreground">Hotel marketing in Sri Lanka</a> is becoming highly competitive. Businesses are now using <a href="/hotel-marketing-sri-lanka" className="text-muted-foreground">hotel marketing Sri Lanka</a> strategies including email campaigns, Findit.lk visibility, and multi-channel remarketing to increase bookings.
               </p>
               <p className="text-muted-foreground mb-4">
-                In this article, we share <strong>real campaign case studies</strong> showing how hotels in Sri Lanka used our proven packages to fill rooms, build brand recall, and achieve consistent occupancy. As the <a href="/hotel-marketing-sri-lanka" className="text-muted-foreground">best hotel marketing agency Sri Lanka</a>, we've helped properties across the island achieve outstanding results.
+                In this article, we share <strong>real campaign case studies</strong> showing how hotels in Sri Lanka used our proven packages to fill rooms, build brand recall, and achieve consistent occupancy. As the <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">best hotel marketing agency Sri Lanka</Link>, we've helped properties across the island achieve outstanding results.
               </p>
               <p className="text-muted-foreground">
                 These campaigns used{" "}

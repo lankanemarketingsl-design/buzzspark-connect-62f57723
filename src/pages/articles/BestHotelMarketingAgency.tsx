@@ -41,7 +41,7 @@ const BestHotelMarketingAgency = () => {
                 With increasing competition in the hospitality industry, choosing the right marketing agency can significantly impact your hotel's success.
               </p>
               <p className="text-muted-foreground mb-4">
-                A professional agency helps you attract more guests, increase bookings, and grow your brand.
+                A professional <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> helps you attract more guests, increase bookings, and grow your brand.
               </p>
               <p className="text-muted-foreground">
                 👉 Learn more about{" "}

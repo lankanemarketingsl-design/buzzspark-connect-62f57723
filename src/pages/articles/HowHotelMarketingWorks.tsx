@@ -49,11 +49,14 @@ const HowHotelMarketingWorks = () => {
                 <li>Customer engagement</li>
                 <li>Brand positioning</li>
               </ul>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-4">
                 👉 Explore full{" "}
                 <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">
                   hotel marketing services in Sri Lanka
                 </Link>.
+              </p>
+              <p className="text-muted-foreground">
+                Working with an expert <Link to="/hotel-marketing-sri-lanka" className="text-primary hover:underline font-semibold">hotel marketing agency Sri Lanka</Link> ensures your property stands out in a competitive market.
               </p>
             </section>
 
