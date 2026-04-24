@@ -147,6 +147,29 @@ const SocialMediaMarketing = () => {
         jsonLd={jsonLd}
       />
 
+      {/* Trust Badges - Top Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="mb-12"
+      >
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-accent/15 border border-accent/40 shadow-sm">
+            <Zap className="w-5 h-5 text-accent" />
+            <span className="text-accent font-bold text-sm sm:text-base">Campaigns from LKR 50,000</span>
+          </div>
+          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary border border-border shadow-sm">
+            <Users className="w-5 h-5 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm sm:text-base">Multi-Platform Reach</span>
+          </div>
+          <div className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary border border-border shadow-sm">
+            <Globe2 className="w-5 h-5 text-secondary-foreground" />
+            <span className="text-secondary-foreground font-bold text-sm sm:text-base">Findit.lk Integration</span>
+          </div>
+        </div>
+      </motion.div>
+
       {/* Introduction */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
