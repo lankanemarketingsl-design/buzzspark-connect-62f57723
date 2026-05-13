@@ -136,6 +136,7 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen overflow-x-hidden bg-background">
           <ScrollToTop />
+          <WhatsAppGlobalTracker />
           <Navbar />
           <main className="overflow-x-hidden">
             <Routes>
