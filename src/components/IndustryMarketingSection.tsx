@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle, Rocket, MessageSquare } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { getServiceName } from "@/lib/whatsappTracking";
 
 export interface IndustryItem {
   emoji: string;
@@ -42,6 +43,8 @@ const IndustryMarketingSection = ({
   ctaWhatsAppMessage,
   ctaButtonText,
 }: IndustryMarketingSectionProps) => {
+  const { pathname } = useLocation();
+  const pageService = getServiceName(pathname);
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -136,6 +139,7 @@ const IndustryMarketingSection = ({
         <h3 className="font-heading text-xl font-bold text-primary-foreground mb-3">{ctaTitle}</h3>
         <p className="text-primary-foreground/80 mb-4">{ctaSubtitle}</p>
         <a
+          data-selected-service={pageService}
           href={`https://wa.me/94771437707?text=${encodeURIComponent(ctaWhatsAppMessage)}`}
           target="_blank"
           rel="noopener noreferrer"
