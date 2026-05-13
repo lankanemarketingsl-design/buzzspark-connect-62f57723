@@ -7,6 +7,9 @@ import {
   Send, Mail, Phone, MapPin, Clock, MessageSquare,
   Facebook, Instagram, Linkedin, ArrowRight
 } from "lucide-react";
+import {
+  Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
+} from "@/components/ui/select";
 import { toast } from "sonner";
 import SEOHead from "@/components/SEOHead";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -14,19 +17,63 @@ import LogoCarousel from "@/components/home/LogoCarousel";
 import DigitalMarketingCTA from "@/components/DigitalMarketingCTA";
 
 const ContactUs = () => {
-  const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", message: "" });
+  const SERVICE_OPTIONS = [
+    "Email Marketing",
+    "SMS Marketing",
+    "WhatsApp Marketing",
+    "Social Media Marketing",
+    "SEO Services",
+    "Google Ads / Online Advertising",
+    "Website Design",
+    "Graphic Design",
+    "Lead Generation",
+    "Multi-Channel Marketing",
+    "Hotel Marketing",
+    "Education Marketing",
+    "Restaurant Marketing",
+    "Real Estate Marketing",
+    "Fashion Marketing",
+    "Finance Marketing",
+    "Other",
+  ];
+
+  const [form, setForm] = useState({ name: "", email: "", phone: "", company: "", service: "", message: "" });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.company.trim() || !form.message.trim()) {
-      toast.error("Please fill in all required fields");
+    if (!form.name.trim() || !form.email.trim() || !form.phone.trim() || !form.company.trim() || !form.service.trim() || !form.message.trim()) {
+      toast.error("Please fill in all required fields, including the service you need");
       return;
     }
-    const text = `Hi Buzz Connect, I'd like more information.%0A%0AName: ${encodeURIComponent(form.name)}%0AEmail: ${encodeURIComponent(form.email)}%0APhone: ${encodeURIComponent(form.phone)}%0ACompany: ${encodeURIComponent(form.company)}%0AMessage: ${encodeURIComponent(form.message)}`;
+    const text =
+      `Hi Buzz Connect, I'm interested in *${form.service}*.` +
+      `%0A%0AService I need: ${encodeURIComponent(form.service)}` +
+      `%0AName: ${encodeURIComponent(form.name)}` +
+      `%0AEmail: ${encodeURIComponent(form.email)}` +
+      `%0APhone: ${encodeURIComponent(form.phone)}` +
+      `%0ACompany: ${encodeURIComponent(form.company)}` +
+      `%0AMessage: ${encodeURIComponent(form.message)}`;
     window.open(`https://wa.me/94771437707?text=${text}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
-    setForm({ name: "", email: "", phone: "", company: "", message: "" });
+    setForm({ name: "", email: "", phone: "", company: "", service: "", message: "" });
   };
+
+  const serviceListMessage =
+    `Hi Buzz Connect, I'd like to inquire about your services.` +
+    `%0A%0APlease tell us which service you're interested in:` +
+    `%0A- Email Marketing` +
+    `%0A- SMS Marketing` +
+    `%0A- WhatsApp Marketing` +
+    `%0A- Social Media Marketing` +
+    `%0A- SEO Services` +
+    `%0A- Google Ads / Online Advertising` +
+    `%0A- Website Design` +
+    `%0A- Graphic Design` +
+    `%0A- Lead Generation` +
+    `%0A- Multi-Channel Marketing` +
+    `%0A- Other (please specify)` +
+    `%0A%0AService I need: ` +
+    `%0AMy name: %0ACompany: %0APhone: %0ABudget: %0AMessage: `;
 
   const contactDetails = [
     { icon: Mail, label: "Email Us", text: "infobuzzconnect@gmail.com", href: "mailto:infobuzzconnect@gmail.com" },
@@ -115,7 +162,7 @@ const ContactUs = () => {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+                href={`https://wa.me/94771437707?text=${serviceListMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-xl bg-accent/10 border border-accent/30 hover:bg-accent/20 transition-colors"
@@ -195,6 +242,19 @@ const ContactUs = () => {
                   />
                 </div>
               </div>
+              <div className="mb-4">
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Service you need *</label>
+                <Select value={form.service} onValueChange={(v) => setForm({ ...form, service: v })}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select the service you're interested in" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SERVICE_OPTIONS.map((s) => (
+                      <SelectItem key={s} value={s}>{s}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
               <div className="mb-6">
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Message *</label>
                 <Textarea
@@ -234,7 +294,7 @@ const ContactUs = () => {
                   <Phone className="mr-2 w-4 h-4" /> Call Now
                 </Button>
               </a>
-              <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services." target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/94771437707?text=${serviceListMessage}`} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero-outline" size="lg" className="text-base">
                   <MessageSquare className="mr-2 w-4 h-4" /> WhatsApp Us
                 </Button>
