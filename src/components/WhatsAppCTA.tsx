@@ -49,7 +49,11 @@ const WhatsAppCTA = () => {
 
   const href = `https://wa.me/${number}?text=${message}&${utmQuery}`;
 
-  const handleClick = () => trackWhatsAppClick(ctx, number, pageUrl);
+  const handleClick = () =>
+    trackWhatsAppClick(ctx, number, pageUrl, {
+      placement: "floating_button",
+      selected_service: service,
+    });
 
   return (
     <a
