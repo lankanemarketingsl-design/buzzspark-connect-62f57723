@@ -87,13 +87,44 @@ declare global {
   }
 }
 
+const slugify = (s: string) =>
+  s.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+
 const WhatsAppCTA = () => {
   const { pathname } = useLocation();
   const number = INDUSTRY_ROUTES.includes(pathname) ? "94771976351" : "94771437707";
   const service = getServiceName(pathname);
   const pageUrl = typeof window !== "undefined" ? window.location.href : "";
 
-  const message = `Hi Buzz Connect, I'm interested in *${service}*.%0A%0APage: ${encodeURIComponent(pageUrl)}%0A%0AMy name: %0ACompany: %0APhone: %0AWhat I need: `;
+  // Forward existing UTMs from the page URL (e.g. Google Ads landing) so the
+  // original campaign attribution is preserved end-to-end. Fall back to
+  // sensible defaults derived from the page/service.
+  const search = typeof window !== "undefined" ? window.location.search : "";
+  const params = new URLSearchParams(search);
+  const utmSource = params.get("utm_source") || "website";
+  const utmMedium = params.get("utm_medium") || "whatsapp_cta";
+  const utmCampaign =
+    params.get("utm_campaign") ||
+    `${slugify(service)}_${slugify(pathname.replace(/^\/+|\/+$/g, "") || "home")}`;
+  const utmContent = params.get("utm_content") || "floating_button";
+  const utmTerm = params.get("utm_term") || slugify(service);
+
+  const utmQuery = new URLSearchParams({
+    utm_source: utmSource,
+    utm_medium: utmMedium,
+    utm_campaign: utmCampaign,
+    utm_content: utmContent,
+    utm_term: utmTerm,
+  }).toString();
+
+  const message =
+    `Hi Buzz Connect, I'm interested in *${service}*.` +
+    `%0A%0APage: ${encodeURIComponent(pageUrl)}` +
+    `%0ACampaign: ${encodeURIComponent(utmCampaign)}` +
+    `%0ASource: ${encodeURIComponent(utmSource)} / ${encodeURIComponent(utmMedium)}` +
+    `%0A%0AMy name: %0ACompany: %0APhone: %0AWhat I need: `;
+
+  const href = `https://wa.me/${number}?text=${message}&${utmQuery}`;
 
   const handleClick = () => {
     try {
@@ -104,11 +135,14 @@ const WhatsAppCTA = () => {
         page_path: pathname,
         page_location: pageUrl,
         whatsapp_number: number,
+        utm_source: utmSource,
+        utm_medium: utmMedium,
+        utm_campaign: utmCampaign,
+        utm_content: utmContent,
+        utm_term: utmTerm,
         transport_type: "beacon",
       };
-      // GA4 / Google Ads (gtag.js)
       window.gtag?.("event", "whatsapp_cta_click", payload);
-      // GTM-friendly fallback via dataLayer
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: "whatsapp_cta_click", ...payload });
     } catch {
@@ -118,7 +152,7 @@ const WhatsAppCTA = () => {
 
   return (
     <a
-      href={`https://wa.me/${number}?text=${message}`}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
       onClick={handleClick}
@@ -126,6 +160,9 @@ const WhatsAppCTA = () => {
       data-analytics-event="whatsapp_cta_click"
       data-service={service}
       data-page={pathname}
+      data-utm-source={utmSource}
+      data-utm-medium={utmMedium}
+      data-utm-campaign={utmCampaign}
       aria-label={`Chat on WhatsApp about ${service}`}
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-full bg-[#25D366] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
     >
