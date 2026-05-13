@@ -378,7 +378,7 @@ const LeadGeneration = () => {
           <p className="text-xs text-muted-foreground mb-4">
             👉 Flexible packages available based on your business goals and campaign scale.
           </p>
-          <a
+          <a data-selected-service="Lead Generation"
             href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services."
             target="_blank"
             rel="noopener noreferrer"
@@ -452,7 +452,7 @@ const LeadGeneration = () => {
           👉 Campaigns starting from LKR 100,000 | Multi-channel strategy included
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
+          <a data-selected-service="Lead Generation"
             href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20lead%20generation%20services."
             target="_blank"
             rel="noopener noreferrer"

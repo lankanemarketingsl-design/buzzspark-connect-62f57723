@@ -123,7 +123,7 @@ const StaffRecruitment = () => {
 
       {/* Hero CTA Buttons */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
-        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20run%20a%20recruitment%20campaign.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+        <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20run%20a%20recruitment%20campaign.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
           <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><Briefcase className="w-5 h-5 mr-2" />Start Hiring Campaign</Button>
         </a>
         <Link to="/contact-us">
@@ -222,7 +222,7 @@ const StaffRecruitment = () => {
                 <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Starter%20Hiring%20Campaign%20(LKR%2012%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Starter%20Hiring%20Campaign%20(LKR%2012%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -246,7 +246,7 @@ const StaffRecruitment = () => {
                 <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Growth%20Hiring%20Campaign%20(LKR%2025%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Growth%20Hiring%20Campaign%20(LKR%2025%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -269,7 +269,7 @@ const StaffRecruitment = () => {
                 <a href="https://www.findit.lk/jobs" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-accent/10 text-accent font-semibold text-xs hover:bg-accent/20 transition-colors">🔗 View on Findit.lk <ArrowRight className="w-3 h-3" /></a>
               </li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Pro%20Hiring%20Campaign%20(LKR%2045%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Pro%20Hiring%20Campaign%20(LKR%2045%2C000).%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -289,7 +289,7 @@ const StaffRecruitment = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Dedicated campaign management</li>
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> 🎬 TikTok Video Ad</li>
             </ul>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Mass%20Hiring%20Campaign.%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Mass%20Hiring%20Campaign.%20Please%20share%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -482,7 +482,7 @@ const StaffRecruitment = () => {
               </li>
             ))}
           </ul>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Recruitment%20Campaign%20Plan%20for%20my%20company." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Recruitment%20Campaign%20Plan%20for%20my%20company." target="_blank" rel="noopener noreferrer">
             <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
           </a>
         </div>
@@ -522,7 +522,7 @@ const StaffRecruitment = () => {
         <p className="text-primary-foreground/80 mb-4 max-w-xl mx-auto">Start your recruitment campaign today — reach more candidates and fill your vacancies faster.</p>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Powered by <strong>multi-channel campaigns</strong> and <strong>Findit.lk</strong> job listings.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20recruitment%20campaign." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20recruitment%20campaign." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Start Your Campaign <ArrowRight className="inline w-4 h-4 ml-1" /></button>
           </a>
           <Link to="/contact-us">

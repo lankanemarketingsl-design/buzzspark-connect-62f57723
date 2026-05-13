@@ -89,7 +89,7 @@ const RecruitmentEmailHiring = () => {
                   <div className="pt-2 border-t border-border">
                     <span className="text-2xl font-bold text-accent">{pkg.price}</span>
                   </div>
-                  <a href={`https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20recruitment%20package.`} target="_blank" rel="noopener noreferrer">
+                  <a data-selected-service="Staff Recruitment Campaigns" href={`https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20${encodeURIComponent(pkg.name)}%20recruitment%20package.`} target="_blank" rel="noopener noreferrer">
                     <Button variant="hero" size="lg" className="w-full text-sm mt-2">Get Started <ArrowRight className="ml-1" /></Button>
                   </a>
                 </CardContent>
@@ -136,7 +136,7 @@ const RecruitmentEmailHiring = () => {
           <p className="text-primary-foreground/60 text-sm mb-6">Powered by <Link to="/email-marketing" className="text-accent hover:underline font-bold">email marketing</Link>, <Link to="/multi-channel-marketing-sri-lanka" className="text-accent hover:underline font-bold">multi-channel campaigns</Link> & Findit.lk</p>
           <div className="flex flex-wrap justify-center gap-4">
             <a href="tel:+94771437707"><Button variant="hero-outline" size="lg" className="text-base"><Phone className="mr-1" /> Call Now</Button></a>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20recruitment%20campaign%20packages." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Start Your Campaign <ArrowRight className="ml-1" /></Button></a>
+            <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20recruitment%20campaign%20packages." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Start Your Campaign <ArrowRight className="ml-1" /></Button></a>
           </div>
         </section>
       </article>

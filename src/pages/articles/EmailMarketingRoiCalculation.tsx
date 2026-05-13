@@ -327,7 +327,7 @@ const EmailMarketingRoiCalculation = () => {
                 Contact BuzzConnect today and our team will help you plan a campaign that delivers real results for your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
+                <a data-selected-service="Email Marketing"
                   href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%20want%20to%20plan%20a%20high-ROI%20email%20campaign."
                   target="_blank"
                   rel="noopener noreferrer"

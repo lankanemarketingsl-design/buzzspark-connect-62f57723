@@ -94,7 +94,7 @@ const CompetitorComparison = () => {
             viewport={{ once: true }}
             className="text-center mt-6"
           >
-            <a
+            <a data-selected-service="your services"
               href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20proposal%20for%20my%20business."
               target="_blank"
               rel="noopener noreferrer"

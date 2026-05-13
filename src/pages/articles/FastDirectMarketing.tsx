@@ -167,7 +167,7 @@ const FastDirectMarketing = () => {
             Want to reach thousands of customers in hours? Start your direct marketing campaign today and see instant results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <a data-selected-service="Advertising in Sri Lanka"
               href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20launching%20a%20direct%20marketing%20campaign."
               target="_blank"
               rel="noopener noreferrer"

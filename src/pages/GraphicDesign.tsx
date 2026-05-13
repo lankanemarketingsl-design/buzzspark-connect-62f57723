@@ -244,7 +244,7 @@ const GraphicDesign = () => {
                   </li>
                 ))}
               </ul>
-              <a
+              <a data-selected-service="Graphic Design"
                 href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in the ${pkg.name} Graphic Design Package (${pkg.price}).`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -256,7 +256,7 @@ const GraphicDesign = () => {
           ))}
         </div>
         <p className="text-center text-sm text-muted-foreground mt-6">
-          💡 Need a custom package? <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20a%20custom%20graphic%20design%20package." target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Contact us on WhatsApp</a> for a tailored quote.
+          💡 Need a custom package? <a data-selected-service="Graphic Design" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20a%20custom%20graphic%20design%20package." target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:underline">Contact us on WhatsApp</a> for a tailored quote.
         </p>
       </motion.div>
 

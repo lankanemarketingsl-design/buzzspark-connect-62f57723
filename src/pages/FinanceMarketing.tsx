@@ -136,7 +136,7 @@ const FinanceMarketing = () => {
 
       {/* Hero CTA Buttons */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
-        <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20get%20finance%20leads.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+        <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20get%20finance%20leads.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
           <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><DollarSign className="w-5 h-5 mr-2" />Get Finance Leads</Button>
         </a>
         <Link to="/contact-us">
@@ -224,7 +224,7 @@ const FinanceMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Ad creative (loan / offer focused)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Generate initial finance inquiries"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20Lead%20Starter%20Package%20(LKR%2060%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20Lead%20Starter%20Package%20(LKR%2060%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -248,7 +248,7 @@ const FinanceMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Performance report (clicks, inquiries)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Consistent daily lead generation"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20Lead%20Generator%20Package%20(LKR%2099%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20Lead%20Generator%20Package%20(LKR%2099%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button className="w-full bg-accent hover:bg-accent/90 text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -272,7 +272,7 @@ const FinanceMarketing = () => {
               <li className="flex items-start gap-2 text-sm text-muted-foreground"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" />Priority campaign during high-demand periods</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Maximize high-quality leads & conversions"</p>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20High%20Value%20Leads%20Package%20(LKR%20175%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Finance%20High%20Value%20Leads%20Package%20(LKR%20175%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -535,7 +535,7 @@ const FinanceMarketing = () => {
               </li>
             ))}
           </ul>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Finance%20Marketing%20Plan%20for%20my%20business." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Finance%20Marketing%20Plan%20for%20my%20business." target="_blank" rel="noopener noreferrer">
             <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
           </a>
         </div>
@@ -571,13 +571,13 @@ const FinanceMarketing = () => {
         <h2 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Start Getting Finance Leads This Month</h2>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Generate high-value financial leads with <strong>multi-channel finance marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20talk%20to%20an%20expert%20about%20finance%20marketing." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20talk%20to%20an%20expert%20about%20finance%20marketing." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Talk to an Expert <ArrowRight className="inline w-4 h-4 ml-1" /></button>
           </a>
           <Link to="/contact-us">
             <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Get a Custom Proposal</button>
           </Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20finance%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Finance Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20finance%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-accent/20 text-accent font-bold hover:bg-accent/30 transition-colors text-base">Launch Your Campaign</button>
           </a>
         </div>
