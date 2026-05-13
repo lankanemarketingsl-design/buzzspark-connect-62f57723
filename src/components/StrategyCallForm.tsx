@@ -1,4 +1,5 @@
 import { useState, FormEvent } from "react";
+import { useLocation } from "react-router-dom";
 import { z } from "zod";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -6,6 +7,11 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
 import { MessageCircle, Phone, Mail } from "lucide-react";
+import {
+  buildWhatsAppContext,
+  getServiceName,
+  trackWhatsAppClick,
+} from "@/lib/whatsappTracking";
 
 const WHATSAPP_NUMBER = "94771437707";
 
@@ -27,6 +33,7 @@ type FormErrors = Partial<Record<keyof z.infer<typeof schema>, string>>;
 
 const StrategyCallForm = () => {
   const { toast } = useToast();
+  const { pathname } = useLocation();
   const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<FormErrors>({});
 
@@ -77,6 +84,24 @@ const StrategyCallForm = () => {
 
     const text = encodeURIComponent(lines.join("\n"));
     const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
+
+    const selectedService = data.service?.trim() || getServiceName(pathname);
+    const ctx = buildWhatsAppContext(
+      pathname,
+      typeof window !== "undefined" ? window.location.search : "",
+      "whatsapp_form",
+      "strategy_call_form",
+    );
+    trackWhatsAppClick(
+      ctx,
+      WHATSAPP_NUMBER,
+      typeof window !== "undefined" ? window.location.href : "",
+      {
+        placement: "strategy_call_form",
+        selected_service: selectedService,
+        form_submitted: true,
+      },
+    );
 
     toast({
       title: "Opening WhatsApp…",

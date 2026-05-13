@@ -166,7 +166,7 @@ const EducationEmailEnrollments = () => {
             <Link to="/education-marketing-sri-lanka">
               <Button variant="hero-outline" size="lg" className="text-base">Education Marketing <ArrowRight className="ml-1" /></Button>
             </Link>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20education%20email%20marketing%20campaigns." target="_blank" rel="noopener noreferrer">
+            <a data-selected-service="Education Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20education%20email%20marketing%20campaigns." target="_blank" rel="noopener noreferrer">
               <Button variant="hero" size="lg" className="text-base">Chat on WhatsApp <ArrowRight className="ml-1" /></Button>
             </a>
           </div>

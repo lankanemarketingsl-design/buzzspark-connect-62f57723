@@ -124,7 +124,7 @@ const EventMarketing = () => {
 
       {/* Hero CTA Buttons */}
       <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="flex flex-wrap justify-center gap-4 mb-12 -mt-4">
-        <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20promote%20my%20event.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+        <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20promote%20my%20event.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
           <Button className="bg-accent hover:bg-accent/90 text-white px-8 py-3 text-base font-bold rounded-full"><Ticket className="w-5 h-5 mr-2" />Promote My Event</Button>
         </a>
         <Link to="/contact-us">
@@ -259,7 +259,7 @@ const EventMarketing = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Event ad creative (poster + offer)</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Generate initial event registrations & awareness"</p>
-            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Launch%20Starter%20Package%20(LKR%2075%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Launch%20Starter%20Package%20(LKR%2075%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -286,7 +286,7 @@ const EventMarketing = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Performance report</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Drive consistent registrations & ticket sales"</p>
-            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Campaign%20(LKR%20125%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20Event%20Growth%20Campaign%20(LKR%20125%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -313,7 +313,7 @@ const EventMarketing = () => {
               <li className="flex items-start gap-2"><CheckCircle className="w-4 h-4 text-accent shrink-0 mt-0.5" /> Priority promotion for featured events</li>
             </ul>
             <p className="text-xs text-muted-foreground italic mb-4">"Maximize attendance & sell out your event faster"</p>
-            <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20High%20Impact%20Event%20Campaign%20(LKR%20175%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
+            <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20the%20High%20Impact%20Event%20Campaign%20(LKR%20175%2C000).%20Please%20share%20more%20details." target="_blank" rel="noopener noreferrer" className="mt-auto">
               <Button variant="hero-outline" className="w-full"><MessageSquare className="w-4 h-4 mr-1" /> Inquire via WhatsApp</Button>
             </a>
           </div>
@@ -552,7 +552,7 @@ const EventMarketing = () => {
               </li>
             ))}
           </ul>
-          <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Event%20Marketing%20Plan%20for%20my%20event." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20a%20FREE%20Event%20Marketing%20Plan%20for%20my%20event." target="_blank" rel="noopener noreferrer">
             <Button className="bg-accent hover:bg-accent/90 text-white font-bold"><Gift className="w-4 h-4 mr-2" />Get Your Free Plan</Button>
           </a>
         </div>
@@ -592,13 +592,13 @@ const EventMarketing = () => {
         <p className="text-primary-foreground/80 mb-4 max-w-xl mx-auto">Whether you're organizing a concert, corporate event, or large-scale campaign, we help you reach the right audience and achieve real results.</p>
         <p className="text-primary-foreground/80 mb-6 max-w-xl mx-auto">Get more attendees with <strong>multi-channel event marketing in Sri Lanka</strong>. Contact Buzz Connect today.</p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20promote%20my%20event.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20promote%20my%20event.%20Please%20share%20details." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base">Talk to an Expert <ArrowRight className="inline w-4 h-4 ml-1" /></button>
           </a>
           <Link to="/contact-us">
             <button className="px-8 py-3 rounded-full border-2 border-accent text-accent font-bold hover:bg-accent/10 transition-colors text-base">Get Proposal</button>
           </Link>
-          <a href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20an%20event%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+          <a data-selected-service="Event Marketing" href="https://wa.me/94771976351?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20an%20event%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
             <button className="px-8 py-3 rounded-full bg-accent/20 text-accent font-bold hover:bg-accent/30 transition-colors text-base">Launch Campaign</button>
           </a>
         </div>

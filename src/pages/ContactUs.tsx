@@ -182,7 +182,7 @@ const ContactUs = () => {
               </div>
 
               {/* WhatsApp CTA */}
-              <a
+              <a data-selected-service="your services"
                 href={`https://wa.me/94771437707?text=${serviceListMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -315,7 +315,7 @@ const ContactUs = () => {
                   <Phone className="mr-2 w-4 h-4" /> Call Now
                 </Button>
               </a>
-              <a href={`https://wa.me/94771437707?text=${serviceListMessage}`} target="_blank" rel="noopener noreferrer">
+              <a data-selected-service="your services" href={`https://wa.me/94771437707?text=${serviceListMessage}`} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero-outline" size="lg" className="text-base">
                   <MessageSquare className="mr-2 w-4 h-4" /> WhatsApp Us
                 </Button>

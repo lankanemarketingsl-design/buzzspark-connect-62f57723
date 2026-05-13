@@ -340,7 +340,7 @@ const OnlineAdvertising = () => {
           >
             Get a Free Quote
           </Link>
-          <a
+          <a data-selected-service="Online Advertising"
             href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27m%20interested%20in%20online%20advertising%20in%20Sri%20Lanka."
             target="_blank"
             rel="noopener noreferrer"

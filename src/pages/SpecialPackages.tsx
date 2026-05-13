@@ -375,7 +375,7 @@ const ComparisonTable = ({ title, subtitle, features, emoji }: { title: string; 
       </div>
 
       <div className="mt-6 text-center">
-        <a
+        <a data-selected-service="Multi-Channel Marketing Packages"
           href={`https://wa.me/94771437707?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in your ${title}.`)}`}
           target="_blank"
           rel="noopener noreferrer"
@@ -476,7 +476,7 @@ const SpecialPackages = () => {
         <p className="text-muted-foreground leading-relaxed mb-6">
           Powered by <Link to="/email-marketing" className="text-accent hover:underline font-semibold">email</Link>, <Link to="/sms-marketing" className="text-accent hover:underline font-semibold">SMS</Link>, <Link to="/whatsapp-marketing" className="text-accent hover:underline font-semibold">WhatsApp</Link> & <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-semibold">lead generation</Link> expertise.
         </p>
-        <a
+        <a data-selected-service="Multi-Channel Marketing Packages"
           href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20a%20free%20multi-channel%20campaign%20plan."
           target="_blank"
           rel="noopener noreferrer"
@@ -546,7 +546,7 @@ const SpecialPackages = () => {
         <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mt-8 p-6 rounded-2xl bg-accent/5 border border-accent/20 text-center">
           <p className="text-foreground font-bold mb-1">Not sure which package fits?</p>
           <p className="text-muted-foreground text-sm mb-4">Tell us your goal — we'll recommend the best option & customize pricing.</p>
-          <a
+          <a data-selected-service="Multi-Channel Marketing Packages"
             href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20need%20help%20choosing%20the%20right%20multi-channel%20package."
             target="_blank"
             rel="noopener noreferrer"
@@ -713,7 +713,7 @@ const SpecialPackages = () => {
 
       {/* Social Proof CTA */}
       <motion.div initial={{ opacity: 0, y: 15 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-16 text-center">
-        <a
+        <a data-selected-service="Multi-Channel Marketing Packages"
           href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20discuss%20a%20multi-channel%20campaign%20for%20my%20business."
           target="_blank"
           rel="noopener noreferrer"
@@ -828,7 +828,7 @@ const SpecialPackages = () => {
         <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
           We only run a limited number of campaigns each week to ensure quality. <strong className="text-foreground">Book early to secure your slot.</strong>
         </p>
-        <a
+        <a data-selected-service="Multi-Channel Marketing Packages"
           href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20secure%20a%20campaign%20slot."
           target="_blank"
           rel="noopener noreferrer"
@@ -876,7 +876,7 @@ const SpecialPackages = () => {
           👉 "From zero to massive reach in just days — powered by multi-channel marketing."
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <a
+          <a data-selected-service="Multi-Channel Marketing Packages"
             href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20launch%20a%20multi-channel%20campaign."
             target="_blank"
             rel="noopener noreferrer"

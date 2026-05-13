@@ -44,7 +44,7 @@ const EmailHeroContent = () => {
           <Link to="/contact-us" className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-accent text-accent-foreground font-bold hover:opacity-90 transition-opacity text-base shadow-lg">
             Launch Your Campaign <ArrowRight className="w-4 h-4" />
           </Link>
-          <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20email%20marketing." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-accent/30 text-foreground font-semibold hover:bg-accent/5 transition-colors text-base">
+          <a data-selected-service="Email Marketing" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20email%20marketing." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border-2 border-accent/30 text-foreground font-semibold hover:bg-accent/5 transition-colors text-base">
             <MessageSquare className="w-4 h-4 text-accent" /> Chat on WhatsApp
           </a>
         </div>

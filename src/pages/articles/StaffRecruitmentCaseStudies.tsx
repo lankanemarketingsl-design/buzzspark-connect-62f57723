@@ -266,7 +266,7 @@ const StaffRecruitmentCaseStudies = () => {
                   solutions and start hiring.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20discuss%20recruitment%20campaign%20packages." target="_blank" rel="noopener noreferrer">
+                  <a data-selected-service="Staff Recruitment Campaigns" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%20want%20to%20discuss%20recruitment%20campaign%20packages." target="_blank" rel="noopener noreferrer">
                     <button className="px-8 py-3 rounded-full bg-primary text-primary-foreground font-bold hover:opacity-90 transition-opacity">Talk to an Expert</button>
                   </a>
                   <Link to="/staff-recruitment-campaigns-sri-lanka">

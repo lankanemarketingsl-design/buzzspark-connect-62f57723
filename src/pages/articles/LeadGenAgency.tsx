@@ -135,7 +135,7 @@ const LeadGenAgency = () => {
           <p className="text-primary-foreground/80 mb-6 max-w-lg mx-auto">BuzzConnect delivers data-driven <Link to="/lead-generation-sri-lanka" className="text-accent hover:underline font-bold">lead generation campaigns</Link> that generate qualified leads and real results.</p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/lead-generation-sri-lanka"><Button variant="hero-outline" size="lg" className="text-base">Lead Generation <ArrowRight className="ml-1" /></Button></Link>
-            <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20lead%20generation%20services." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Chat on WhatsApp <ArrowRight className="ml-1" /></Button></a>
+            <a data-selected-service="Lead Generation" href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20lead%20generation%20services." target="_blank" rel="noopener noreferrer"><Button variant="hero" size="lg" className="text-base">Chat on WhatsApp <ArrowRight className="ml-1" /></Button></a>
           </div>
         </section>
       </article>

@@ -178,7 +178,7 @@ const GraphicDesignService = () => {
           <p className="text-primary-foreground/80 mb-6">
             Elevate your brand with professional {service.title.toLowerCase()} services. Work with a creative team that understands branding, design, and your business goals.
           </p>
-          <a
+          <a data-selected-service="Graphic Design"
             href={`https://wa.me/94771976351?text=${encodeURIComponent(`Hi Buzz Connect, I'm interested in ${service.title} services.`)}`}
             target="_blank"
             rel="noopener noreferrer"

@@ -7,6 +7,7 @@ import ContactSection from "@/components/home/ContactSection";
 import LogoCarousel from "@/components/home/LogoCarousel";
 import RelatedServices from "@/components/RelatedServices";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { getServiceName } from "@/lib/whatsappTracking";
 
 interface ServicePageLayoutProps {
   badge: string;
@@ -25,6 +26,7 @@ const INDUSTRY_ROUTES = [
 const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayoutProps) => {
   const location = useLocation();
   const waNumber = INDUSTRY_ROUTES.includes(location.pathname) ? "94771976351" : "94771437707";
+  const pageService = getServiceName(location.pathname);
 
   return (
     <div className="pt-14 sm:pt-16">
@@ -48,7 +50,7 @@ const ServicePageLayout = ({ badge, title, subtitle, children }: ServicePageLayo
                   Get a Free Quote <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <a href={`https://wa.me/${waNumber}?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services.`} target="_blank" rel="noopener noreferrer">
+              <a data-selected-service={pageService} href={`https://wa.me/${waNumber}?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services.`} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero-outline" size="lg" className="text-base">
                   <PhoneCall className="mr-1 w-4 h-4" /> Chat on WhatsApp
                 </Button>

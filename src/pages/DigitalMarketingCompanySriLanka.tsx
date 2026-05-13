@@ -232,7 +232,7 @@ const DigitalMarketingCompanySriLanka = () => {
             We combine <strong>WhatsApp bulk messaging</strong> and <strong>email marketing</strong> — the most direct, highest-engagement channels available in Sri Lanka today — to help businesses reach more customers, increase sales, and grow faster than traditional advertising allows.
           </p>
           <div className="pt-2">
-            <a href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27d%20like%20a%20free%20digital%20marketing%20strategy%20session." target="_blank" rel="noopener noreferrer">
+            <a data-selected-service="Digital Marketing" href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27d%20like%20a%20free%20digital%20marketing%20strategy%20session." target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent text-accent-foreground font-semibold shadow-lg hover:shadow-xl transition-all">
                 Get a Free Strategy Session <ArrowRight className="w-4 h-4" />
               </span>
@@ -511,7 +511,7 @@ const DigitalMarketingCompanySriLanka = () => {
             Ready to scale your business? BuzzConnect helps you reach more customers, increase engagement, and drive real results through powerful digital marketing strategies built for the Sri Lankan market.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27d%20like%20to%20start%20a%20digital%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
+            <a data-selected-service="Digital Marketing" href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27d%20like%20to%20start%20a%20digital%20marketing%20campaign." target="_blank" rel="noopener noreferrer">
               <span className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-accent-foreground text-primary font-semibold hover:scale-105 transition-transform">
                 Start Your Campaign Today <ArrowRight className="w-4 h-4" />
               </span>

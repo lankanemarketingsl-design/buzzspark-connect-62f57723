@@ -183,7 +183,7 @@ const Careers = () => {
                 <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-accent shrink-0" /> Experience (short summary or "Fresher")</li>
                 <li className="flex items-center gap-2"><ArrowRight className="w-3 h-3 text-accent shrink-0" /> Attach your CV</li>
               </ul>
-              <a
+              <a data-selected-service="career opportunities"
                 href="https://wa.me/94771437707?text=Hi%20BuzzConnect%2C%20I%27m%20interested%20in%20a%20career%20opportunity.%0A%0AName%3A%20%0AArea%20of%20Interest%3A%20%0AExperience%3A%20"
                 target="_blank"
                 rel="noopener noreferrer"
