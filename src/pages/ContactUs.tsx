@@ -11,6 +11,11 @@ import {
   Select, SelectContent, SelectItem, SelectTrigger, SelectValue,
 } from "@/components/ui/select";
 import { toast } from "sonner";
+import {
+  buildWhatsAppContext,
+  getWhatsAppNumber,
+  trackWhatsAppClick,
+} from "@/lib/whatsappTracking";
 import SEOHead from "@/components/SEOHead";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LogoCarousel from "@/components/home/LogoCarousel";
@@ -53,7 +58,23 @@ const ContactUs = () => {
       `%0APhone: ${encodeURIComponent(form.phone)}` +
       `%0ACompany: ${encodeURIComponent(form.company)}` +
       `%0AMessage: ${encodeURIComponent(form.message)}`;
-    window.open(`https://wa.me/94771437707?text=${text}`, "_blank");
+
+    // Track the form submission as a WhatsApp conversion with the chosen service
+    const pathname = "/contact-us";
+    const number = getWhatsAppNumber(pathname);
+    const ctx = buildWhatsAppContext(
+      pathname,
+      typeof window !== "undefined" ? window.location.search : "",
+      "whatsapp_form",
+      "contact_form",
+    );
+    trackWhatsAppClick(ctx, number, typeof window !== "undefined" ? window.location.href : "", {
+      placement: "contact_form",
+      selected_service: form.service,
+      form_submitted: true,
+    });
+
+    window.open(`https://wa.me/${number}?text=${text}`, "_blank");
     toast.success("Redirecting to WhatsApp...");
     setForm({ name: "", email: "", phone: "", company: "", service: "", message: "" });
   };
