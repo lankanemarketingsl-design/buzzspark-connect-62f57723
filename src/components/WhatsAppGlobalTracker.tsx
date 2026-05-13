@@ -50,7 +50,15 @@ const WhatsAppGlobalTracker = () => {
       const enriched = enrichWhatsAppHref(href as string, ctx);
       if (enriched !== href) anchor.setAttribute("href", enriched);
 
-      trackWhatsAppClick(ctx, getWhatsAppNumber(pathname), window.location.href);
+      const selectedService =
+        anchor.dataset.selectedService ||
+        anchor.dataset.service ||
+        ctx.service;
+
+      trackWhatsAppClick(ctx, getWhatsAppNumber(pathname), window.location.href, {
+        placement,
+        selected_service: selectedService,
+      });
     };
 
     // Capture phase so we mutate href before the browser navigates.
