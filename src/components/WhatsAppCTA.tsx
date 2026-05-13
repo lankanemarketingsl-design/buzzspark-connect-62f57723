@@ -14,12 +14,30 @@ const WhatsAppCTA = () => {
   const ctx = buildWhatsAppContext(pathname, search, "whatsapp_cta", "floating_button");
   const { service } = ctx;
 
+  const isGenericService = service === "your services";
+  const serviceLine = isGenericService
+    ? `Hi Buzz Connect, I'd like to inquire about your services.` +
+      `%0A%0APlease tell us which service you're interested in:` +
+      `%0A- Email Marketing` +
+      `%0A- SMS Marketing` +
+      `%0A- WhatsApp Marketing` +
+      `%0A- Social Media Marketing` +
+      `%0A- SEO Services` +
+      `%0A- Google Ads / Online Advertising` +
+      `%0A- Website Design` +
+      `%0A- Graphic Design` +
+      `%0A- Lead Generation` +
+      `%0A- Multi-Channel Marketing` +
+      `%0A- Other (please specify)`
+    : `Hi Buzz Connect, I'm interested in *${service}*.`;
+
   const message =
-    `Hi Buzz Connect, I'm interested in *${service}*.` +
+    serviceLine +
     `%0A%0APage: ${encodeURIComponent(pageUrl)}` +
     `%0ACampaign: ${encodeURIComponent(ctx.utm_campaign)}` +
     `%0ASource: ${encodeURIComponent(ctx.utm_source)} / ${encodeURIComponent(ctx.utm_medium)}` +
-    `%0A%0AMy name: %0ACompany: %0APhone: %0AWhat I need: `;
+    `%0A%0AService I need: ${isGenericService ? "" : service}` +
+    `%0AMy name: %0ACompany: %0APhone: %0ABudget: %0AMessage: `;
 
   const utmQuery = new URLSearchParams({
     utm_source: ctx.utm_source,
