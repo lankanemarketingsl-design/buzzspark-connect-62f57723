@@ -80,6 +80,13 @@ const getServiceName = (pathname: string): string => {
   return titleCaseFromPath(pathname);
 };
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+    dataLayer?: unknown[];
+  }
+}
+
 const WhatsAppCTA = () => {
   const { pathname } = useLocation();
   const number = INDUSTRY_ROUTES.includes(pathname) ? "94771976351" : "94771437707";
@@ -88,11 +95,37 @@ const WhatsAppCTA = () => {
 
   const message = `Hi Buzz Connect, I'm interested in *${service}*.%0A%0APage: ${encodeURIComponent(pageUrl)}%0A%0AMy name: %0ACompany: %0APhone: %0AWhat I need: `;
 
+  const handleClick = () => {
+    try {
+      const payload = {
+        event_category: "engagement",
+        event_label: service,
+        service,
+        page_path: pathname,
+        page_location: pageUrl,
+        whatsapp_number: number,
+        transport_type: "beacon",
+      };
+      // GA4 / Google Ads (gtag.js)
+      window.gtag?.("event", "whatsapp_cta_click", payload);
+      // GTM-friendly fallback via dataLayer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "whatsapp_cta_click", ...payload });
+    } catch {
+      // analytics must never break the click
+    }
+  };
+
   return (
     <a
       href={`https://wa.me/${number}?text=${message}`}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handleClick}
+      onAuxClick={handleClick}
+      data-analytics-event="whatsapp_cta_click"
+      data-service={service}
+      data-page={pathname}
       aria-label={`Chat on WhatsApp about ${service}`}
       className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-2 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-full bg-[#25D366] text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 group"
     >
