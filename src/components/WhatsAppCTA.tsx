@@ -87,8 +87,35 @@ declare global {
   }
 }
 
+// UTM hygiene: GA4 accepts up to 100 chars per UTM but recommends keeping
+// them short and ASCII-only. We slugify, strip diacritics, collapse repeats,
+// and truncate on a word boundary so utm_campaign is always safe in URLs.
+const UTM_LIMITS: Record<string, number> = {
+  utm_source: 50,
+  utm_medium: 50,
+  utm_campaign: 80,
+  utm_content: 50,
+  utm_term: 50,
+};
+
 const slugify = (s: string) =>
-  s.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+  (s || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "") // strip diacritics
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "_") // only a-z0-9 + underscore
+    .replace(/_+/g, "_")
+    .replace(/^_+|_+$/g, "");
+
+const normalizeUtm = (raw: string | null, fallback: string, key: string): string => {
+  const slug = slugify(raw || fallback) || slugify(fallback) || "na";
+  const limit = UTM_LIMITS[key] ?? 80;
+  if (slug.length <= limit) return slug;
+  // Truncate on the last underscore boundary inside the limit when possible.
+  const cut = slug.slice(0, limit);
+  const boundary = cut.lastIndexOf("_");
+  return (boundary > limit * 0.6 ? cut.slice(0, boundary) : cut).replace(/_+$/g, "");
+};
 
 const WhatsAppCTA = () => {
   const { pathname } = useLocation();
@@ -101,13 +128,17 @@ const WhatsAppCTA = () => {
   // sensible defaults derived from the page/service.
   const search = typeof window !== "undefined" ? window.location.search : "";
   const params = new URLSearchParams(search);
-  const utmSource = params.get("utm_source") || "website";
-  const utmMedium = params.get("utm_medium") || "whatsapp_cta";
-  const utmCampaign =
-    params.get("utm_campaign") ||
-    `${slugify(service)}_${slugify(pathname.replace(/^\/+|\/+$/g, "") || "home")}`;
-  const utmContent = params.get("utm_content") || "floating_button";
-  const utmTerm = params.get("utm_term") || slugify(service);
+  const pageSlug = pathname.replace(/^\/+|\/+$/g, "") || "home";
+
+  const utmSource = normalizeUtm(params.get("utm_source"), "website", "utm_source");
+  const utmMedium = normalizeUtm(params.get("utm_medium"), "whatsapp_cta", "utm_medium");
+  const utmCampaign = normalizeUtm(
+    params.get("utm_campaign"),
+    `${service}_${pageSlug}`,
+    "utm_campaign",
+  );
+  const utmContent = normalizeUtm(params.get("utm_content"), "floating_button", "utm_content");
+  const utmTerm = normalizeUtm(params.get("utm_term"), service, "utm_term");
 
   const utmQuery = new URLSearchParams({
     utm_source: utmSource,
