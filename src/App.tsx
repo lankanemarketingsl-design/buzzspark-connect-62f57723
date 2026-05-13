@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
+import WhatsAppGlobalTracker from "@/components/WhatsAppGlobalTracker";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
@@ -135,6 +136,7 @@ const App = () => (
       <BrowserRouter>
         <div className="min-h-screen overflow-x-hidden bg-background">
           <ScrollToTop />
+          <WhatsAppGlobalTracker />
           <Navbar />
           <main className="overflow-x-hidden">
             <Routes>
