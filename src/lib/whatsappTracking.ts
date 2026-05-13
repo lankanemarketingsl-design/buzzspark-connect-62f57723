@@ -138,6 +138,12 @@ declare global {
   }
 }
 
+// Google Ads conversion. Once you create the conversion action in Google Ads
+// (Tools → Conversions → + New → Website → "WhatsApp Click"), paste the label
+// portion of the snippet (the part after the slash) below.
+const GOOGLE_ADS_CONVERSION_ID = "AW-16673831888";
+const GOOGLE_ADS_WHATSAPP_CONVERSION_LABEL = ""; // e.g. "AbCdEfGhIjKlMnOp"
+
 export const trackWhatsAppClick = (ctx: WhatsAppContext, number: string, pageUrl: string) => {
   try {
     const payload = {
@@ -154,9 +160,21 @@ export const trackWhatsAppClick = (ctx: WhatsAppContext, number: string, pageUrl
       utm_term: ctx.utm_term,
       transport_type: "beacon",
     };
+    // GA4 + dataLayer event — segment by `service` / `page_path` in GA4
     window.gtag?.("event", "whatsapp_cta_click", payload);
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: "whatsapp_cta_click", ...payload });
+
+    // Google Ads conversion fire
+    if (GOOGLE_ADS_WHATSAPP_CONVERSION_LABEL) {
+      window.gtag?.("event", "conversion", {
+        send_to: `${GOOGLE_ADS_CONVERSION_ID}/${GOOGLE_ADS_WHATSAPP_CONVERSION_LABEL}`,
+      });
+    } else {
+      // Fallback: send the event to Ads so it appears under the AW property and
+      // can be promoted to a conversion from the Google Ads UI.
+      window.gtag?.("event", "whatsapp_cta_click", { send_to: GOOGLE_ADS_CONVERSION_ID });
+    }
   } catch {
     /* analytics must never break the click */
   }
