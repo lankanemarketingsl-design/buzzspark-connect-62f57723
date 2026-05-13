@@ -162,7 +162,7 @@ const ContactUs = () => {
 
               {/* WhatsApp CTA */}
               <a
-                href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+                href={`https://wa.me/94771437707?text=${serviceListMessage}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-4 rounded-xl bg-accent/10 border border-accent/30 hover:bg-accent/20 transition-colors"
@@ -242,6 +242,19 @@ const ContactUs = () => {
                   />
                 </div>
               </div>
+              <div className="mb-4">
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Service you need *</label>
+                <Select value={form.service} onValueChange={(v) => setForm({ ...form, service: v })}>
+                  <SelectTrigger>
+                    <SelectValue placeholder="Select the service you're interested in" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {SERVICE_OPTIONS.map((s) => (
+                      <SelectItem key={s} value={s}>{s}</SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
               <div className="mb-6">
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Message *</label>
                 <Textarea
@@ -281,7 +294,7 @@ const ContactUs = () => {
                   <Phone className="mr-2 w-4 h-4" /> Call Now
                 </Button>
               </a>
-              <a href="https://wa.me/94771437707?text=Hi%20Buzz%20Connect%2C%20I%27m%20interested%20in%20your%20marketing%20services." target="_blank" rel="noopener noreferrer">
+              <a href={`https://wa.me/94771437707?text=${serviceListMessage}`} target="_blank" rel="noopener noreferrer">
                 <Button variant="hero-outline" size="lg" className="text-base">
                   <MessageSquare className="mr-2 w-4 h-4" /> WhatsApp Us
                 </Button>
