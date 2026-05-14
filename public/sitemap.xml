@@ -759,4 +759,17 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <!-- TIER 14: NEWLY INTERLINKED ARTICLES (Priority 0.6)     -->
+  <!-- ═══════════════════════════════════════════════════════ -->
+  <url><loc>https://buzzconnect.lk/what-is-advertising-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/types-of-advertising-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/advertising-cost-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/how-to-advertise-business-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/advertising-reach-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/best-digital-marketing-agency-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://buzzconnect.lk/best-direct-marketing-company-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/best-website-design-company-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://buzzconnect.lk/best-google-ads-agency-sri-lanka</loc><lastmod>2026-05-14</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
