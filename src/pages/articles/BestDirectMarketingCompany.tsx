@@ -185,8 +185,16 @@ const BestDirectMarketingCompany = () => {
                 Direct marketing delivers your message directly to specific verified contacts — bypassing algorithms entirely. Guaranteed delivery, precise targeting, and fully measurable results.
               </p>
             </section>
-
-            <RelatedArticles currentPath="/best-direct-marketing-company-sri-lanka" />
+        <div className="my-8 p-5 rounded-xl border border-accent/30 bg-accent/5">
+          <p className="text-sm sm:text-base text-foreground">
+            Comparing your options? See our full breakdown of the top{" "}
+            <Link to="/digital-marketing-companies-sri-lanka" className="font-semibold text-accent underline underline-offset-2 hover:no-underline">
+              digital marketing companies in Sri Lanka
+            </Link>{" "}
+            and how to pick the right partner for your business.
+          </p>
+        </div>
+        <RelatedArticles currentPath="/best-direct-marketing-company-sri-lanka" />
           </article>
         </div>
       </div>
