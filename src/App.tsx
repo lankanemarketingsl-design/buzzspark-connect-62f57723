@@ -184,6 +184,7 @@ const App = () => (
               <Route path="/advertising-sri-lanka" element={<AdvertisingSriLanka />} />
               <Route path="/digital-marketing-company-in-sri-lanka" element={<DigitalMarketingCompanySriLanka />} />
               <Route path="/digital-marketing-company-sri-lanka" element={<Navigate to="/digital-marketing-company-in-sri-lanka" replace />} />
+              <Route path="/digital-marketing-companies-sri-lanka" element={<DigitalMarketingCompaniesSriLanka />} />
               <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               <Route path="/staff-recruitment-campaigns-sri-lanka" element={<StaffRecruitment />} />
               <Route path="/careers" element={<Careers />} />
