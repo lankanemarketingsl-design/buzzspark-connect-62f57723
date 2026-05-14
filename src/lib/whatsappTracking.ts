@@ -32,6 +32,7 @@ const SERVICE_MAP: Record<string, string> = {
   "/digital-marketing-company-in-sri-lanka": "Digital Marketing",
   "/digital-marketing-companies-sri-lanka": "Digital Marketing",
   "/marketing-agencies-sri-lanka": "Digital Marketing",
+  "/advertising-agencies-sri-lanka": "Online Advertising",
   "/event-marketing-sri-lanka": "Event Marketing",
   "/staff-recruitment-campaigns-sri-lanka": "Staff Recruitment Campaigns",
   "/google-ads-sri-lanka": "Google Ads",
