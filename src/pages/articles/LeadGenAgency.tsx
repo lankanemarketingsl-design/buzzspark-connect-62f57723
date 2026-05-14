@@ -139,7 +139,16 @@ const LeadGenAgency = () => {
           </div>
         </section>
       </article>
-      <div className="container mx-auto px-4"><RelatedArticles currentPath="/lead-generation-agency-sri-lanka" /></div>
+      <div className="container mx-auto px-4">        <div className="my-8 p-5 rounded-xl border border-accent/30 bg-accent/5">
+          <p className="text-sm sm:text-base text-foreground">
+            Comparing your options? See our full breakdown of the top{' '}
+            <Link to="/digital-marketing-companies-sri-lanka" className="font-semibold text-accent underline underline-offset-2 hover:no-underline">
+              digital marketing companies in Sri Lanka
+            </Link>{' '}
+            and how to pick the right partner for your business.
+          </p>
+        </div>
+        <RelatedArticles currentPath="/lead-generation-agency-sri-lanka" /></div>
     </ServicePageLayout>
   );
 };
