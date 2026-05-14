@@ -121,6 +121,7 @@ import RealEstateMarketing from "./pages/RealEstateMarketing.tsx";
 import FashionMarketing from "./pages/FashionMarketing.tsx";
 import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
 import DigitalMarketingCompanySriLanka from "./pages/DigitalMarketingCompanySriLanka.tsx";
+import DigitalMarketingCompaniesSriLanka from "./pages/DigitalMarketingCompaniesSriLanka.tsx";
 import EventMarketing from "./pages/EventMarketing.tsx";
 import StaffRecruitment from "./pages/StaffRecruitment.tsx";
 import GraphicDesignService from "./pages/GraphicDesignService.tsx";
