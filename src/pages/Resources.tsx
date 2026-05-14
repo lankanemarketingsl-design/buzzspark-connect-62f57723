@@ -47,6 +47,34 @@ import articleLeadGenAgency from "@/assets/blog/article-lead-gen-agency.webp";
 import articleMultichannelCampaigns from "@/assets/blog/article-multichannel-campaigns.webp";
 const articles = [
   {
+    title: "How to Choose a Digital Marketing Agency in Sri Lanka (2026 Buyer's Guide)",
+    date: "May 14, 2026",
+    excerpt: "Buyer's checklist, pricing benchmarks and red flags to avoid when choosing a digital marketing agency in Sri Lanka.",
+    path: "/how-to-choose-digital-marketing-agency",
+    image: articleBestAdvertising,
+  },
+  {
+    title: "Email vs SMS vs WhatsApp Marketing in Sri Lanka: Which Wins in 2026?",
+    date: "May 14, 2026",
+    excerpt: "Head-to-head comparison of email, SMS and WhatsApp marketing — open rates, cost, ROI and when to use each channel.",
+    path: "/email-vs-sms-vs-whatsapp-marketing",
+    image: articleEmailVsSocial,
+  },
+  {
+    title: "Digital Marketing Cost in Sri Lanka (2026 Price Guide)",
+    date: "May 14, 2026",
+    excerpt: "Real digital marketing prices in Sri Lanka 2026 — by channel and business size. Email, SMS, WhatsApp, SEO, Google Ads & multi-channel.",
+    path: "/digital-marketing-cost-sri-lanka",
+    image: articleGoogleAdsCost,
+  },
+  {
+    title: "Digital Marketing Trends in Sri Lanka 2025–2026",
+    date: "May 14, 2026",
+    excerpt: "10 major digital marketing trends shaping Sri Lanka in 2025–2026 — AI, WhatsApp commerce, video, first-party data and more.",
+    path: "/digital-marketing-trends-sri-lanka",
+    image: articleMultichannelCampaigns,
+  },
+  {
     title: "What is Advertising in Sri Lanka? Complete Guide for Businesses (2026)",
     date: "Apr 24, 2026",
     excerpt: "Every type of advertising available in Sri Lanka — digital, direct, traditional, multi-channel. Learn which channels work for which goals.",
