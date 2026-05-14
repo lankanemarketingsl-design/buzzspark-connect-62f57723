@@ -193,6 +193,10 @@ const App = () => (
               <Route path="/digital-marketing-companies-sri-lanka" element={<DigitalMarketingCompaniesSriLanka />} />
               <Route path="/marketing-agencies-sri-lanka" element={<MarketingAgenciesSriLanka />} />
               <Route path="/advertising-agencies-sri-lanka" element={<AdvertisingAgenciesSriLanka />} />
+              <Route path="/how-to-choose-digital-marketing-agency-sri-lanka" element={<HowToChooseDigitalMarketingAgency />} />
+              <Route path="/email-vs-sms-vs-whatsapp-marketing-sri-lanka" element={<EmailVsSmsVsWhatsApp />} />
+              <Route path="/digital-marketing-cost-sri-lanka" element={<DigitalMarketingCostSriLanka />} />
+              <Route path="/digital-marketing-trends-sri-lanka" element={<DigitalMarketingTrendsSriLanka />} />
               <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               <Route path="/staff-recruitment-campaigns-sri-lanka" element={<StaffRecruitment />} />
               <Route path="/careers" element={<Careers />} />
