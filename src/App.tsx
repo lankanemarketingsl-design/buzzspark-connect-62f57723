@@ -107,6 +107,10 @@ import LeadGenerationCost from "./pages/articles/LeadGenerationCost.tsx";
 import WhatIsAdvertisingSriLanka from "./pages/articles/WhatIsAdvertisingSriLanka.tsx";
 import TypesOfAdvertisingSriLanka from "./pages/articles/TypesOfAdvertisingSriLanka.tsx";
 import AdvertisingCostSriLanka from "./pages/articles/AdvertisingCostSriLanka.tsx";
+import HowToChooseDigitalMarketingAgency from "./pages/articles/HowToChooseDigitalMarketingAgency.tsx";
+import EmailVsSmsVsWhatsApp from "./pages/articles/EmailVsSmsVsWhatsApp.tsx";
+import DigitalMarketingCostSriLanka from "./pages/articles/DigitalMarketingCostSriLanka.tsx";
+import DigitalMarketingTrendsSriLanka from "./pages/articles/DigitalMarketingTrendsSriLanka.tsx";
 import HowToAdvertiseBusinessSriLanka from "./pages/articles/HowToAdvertiseBusinessSriLanka.tsx";
 import AdvertisingReachSriLanka from "./pages/articles/AdvertisingReachSriLanka.tsx";
 import GoogleAdsSriLanka from "./pages/GoogleAdsSriLanka.tsx";
@@ -189,6 +193,10 @@ const App = () => (
               <Route path="/digital-marketing-companies-sri-lanka" element={<DigitalMarketingCompaniesSriLanka />} />
               <Route path="/marketing-agencies-sri-lanka" element={<MarketingAgenciesSriLanka />} />
               <Route path="/advertising-agencies-sri-lanka" element={<AdvertisingAgenciesSriLanka />} />
+              <Route path="/how-to-choose-digital-marketing-agency-sri-lanka" element={<HowToChooseDigitalMarketingAgency />} />
+              <Route path="/email-vs-sms-vs-whatsapp-marketing-sri-lanka" element={<EmailVsSmsVsWhatsApp />} />
+              <Route path="/digital-marketing-cost-sri-lanka" element={<DigitalMarketingCostSriLanka />} />
+              <Route path="/digital-marketing-trends-sri-lanka" element={<DigitalMarketingTrendsSriLanka />} />
               <Route path="/event-marketing-sri-lanka" element={<EventMarketing />} />
               <Route path="/staff-recruitment-campaigns-sri-lanka" element={<StaffRecruitment />} />
               <Route path="/careers" element={<Careers />} />
