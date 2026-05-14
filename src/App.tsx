@@ -123,6 +123,7 @@ import AdvertisingSriLanka from "./pages/AdvertisingSriLanka.tsx";
 import DigitalMarketingCompanySriLanka from "./pages/DigitalMarketingCompanySriLanka.tsx";
 import DigitalMarketingCompaniesSriLanka from "./pages/DigitalMarketingCompaniesSriLanka.tsx";
 import MarketingAgenciesSriLanka from "./pages/MarketingAgenciesSriLanka.tsx";
+import AdvertisingAgenciesSriLanka from "./pages/AdvertisingAgenciesSriLanka.tsx";
 import EventMarketing from "./pages/EventMarketing.tsx";
 import StaffRecruitment from "./pages/StaffRecruitment.tsx";
 import GraphicDesignService from "./pages/GraphicDesignService.tsx";
