@@ -7,6 +7,7 @@ import {
   isWhatsAppHref,
   trackWhatsAppClick,
 } from "@/lib/whatsappTracking";
+import { logInquiryFromContext } from "@/lib/logInquiry";
 
 /**
  * Site-wide delegated handler for every WhatsApp CTA on the page.
