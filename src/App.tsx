@@ -137,19 +137,32 @@ import Careers from "./pages/Careers.tsx";
 
 const queryClient = new QueryClient();
 
+const SiteChrome = ({ children }: { children: React.ReactNode }) => {
+  const { pathname } = useLocation();
+  const isAdmin = pathname.startsWith("/admin");
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <ScrollToTop />
+      {!isAdmin && <WhatsAppGlobalTracker />}
+      {!isAdmin && <Navbar />}
+      <main className="overflow-x-hidden">{children}</main>
+      {!isAdmin && <Footer />}
+      {!isAdmin && <WhatsAppCTA />}
+    </div>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen overflow-x-hidden bg-background">
-          <ScrollToTop />
-          <WhatsAppGlobalTracker />
-          <Navbar />
-          <main className="overflow-x-hidden">
+        <SiteChrome>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/email-marketing" element={<EmailMarketing />} />
               <Route path="/sms-marketing" element={<SmsMarketing />} />
               <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
