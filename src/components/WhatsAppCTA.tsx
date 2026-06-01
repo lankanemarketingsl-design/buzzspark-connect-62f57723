@@ -5,6 +5,7 @@ import {
   getWhatsAppNumber,
   trackWhatsAppClick,
 } from "@/lib/whatsappTracking";
+import { logInquiryFromContext } from "@/lib/logInquiry";
 
 const WhatsAppCTA = () => {
   const { pathname } = useLocation();
@@ -49,11 +50,16 @@ const WhatsAppCTA = () => {
 
   const href = `https://wa.me/${number}?text=${message}&${utmQuery}`;
 
-  const handleClick = () =>
+  const handleClick = () => {
     trackWhatsAppClick(ctx, number, pageUrl, {
       placement: "floating_button",
       selected_service: service,
     });
+    logInquiryFromContext(ctx, number, {
+      service,
+      placement: "floating_button",
+    });
+  };
 
   return (
     <a

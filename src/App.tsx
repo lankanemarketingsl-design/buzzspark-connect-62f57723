@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import WhatsAppCTA from "@/components/WhatsAppCTA";
 import WhatsAppGlobalTracker from "@/components/WhatsAppGlobalTracker";
 import ScrollToTop from "@/components/ScrollToTop";
+import AdminLogin from "./pages/AdminLogin.tsx";
+import AdminDashboard from "./pages/AdminDashboard.tsx";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import EmailMarketing from "./pages/EmailMarketing.tsx";
@@ -135,19 +137,32 @@ import Careers from "./pages/Careers.tsx";
 
 const queryClient = new QueryClient();
 
+const SiteChrome = ({ children }: { children: React.ReactNode }) => {
+  const { pathname } = useLocation();
+  const isAdmin = pathname.startsWith("/admin");
+  return (
+    <div className="min-h-screen overflow-x-hidden bg-background">
+      <ScrollToTop />
+      {!isAdmin && <WhatsAppGlobalTracker />}
+      {!isAdmin && <Navbar />}
+      <main className="overflow-x-hidden">{children}</main>
+      {!isAdmin && <Footer />}
+      {!isAdmin && <WhatsAppCTA />}
+    </div>
+  );
+};
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="min-h-screen overflow-x-hidden bg-background">
-          <ScrollToTop />
-          <WhatsAppGlobalTracker />
-          <Navbar />
-          <main className="overflow-x-hidden">
+        <SiteChrome>
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin" element={<AdminDashboard />} />
               <Route path="/email-marketing" element={<EmailMarketing />} />
               <Route path="/sms-marketing" element={<SmsMarketing />} />
               <Route path="/whatsapp-marketing" element={<WhatsAppMarketing />} />
@@ -290,10 +305,7 @@ const App = () => (
               
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </main>
-          <Footer />
-          <WhatsAppCTA />
-        </div>
+        </SiteChrome>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

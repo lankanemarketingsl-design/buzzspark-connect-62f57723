@@ -7,6 +7,7 @@ import {
   isWhatsAppHref,
   trackWhatsAppClick,
 } from "@/lib/whatsappTracking";
+import { logInquiryFromContext } from "@/lib/logInquiry";
 
 /**
  * Site-wide delegated handler for every WhatsApp CTA on the page.
@@ -55,9 +56,14 @@ const WhatsAppGlobalTracker = () => {
         anchor.dataset.service ||
         ctx.service;
 
-      trackWhatsAppClick(ctx, getWhatsAppNumber(pathname), window.location.href, {
+      const waNumber = getWhatsAppNumber(pathname);
+      trackWhatsAppClick(ctx, waNumber, window.location.href, {
         placement,
         selected_service: selectedService,
+      });
+      logInquiryFromContext(ctx, waNumber, {
+        service: selectedService,
+        placement,
       });
     };
 
