@@ -104,6 +104,25 @@ const StrategyCallForm = () => {
       },
     );
 
+    logInquiry({
+      inquiry_type: "form_submission",
+      name: data.name,
+      phone: data.phone,
+      email: data.email || undefined,
+      business: data.business || undefined,
+      service: selectedService,
+      message: data.message || undefined,
+      source_page: pathname,
+      source_url: typeof window !== "undefined" ? window.location.href : "",
+      placement: "strategy_call_form",
+      whatsapp_number: WHATSAPP_NUMBER,
+      utm_source: ctx.utm_source,
+      utm_medium: ctx.utm_medium,
+      utm_campaign: ctx.utm_campaign,
+      utm_content: ctx.utm_content,
+      utm_term: ctx.utm_term,
+    });
+
     toast({
       title: "Opening WhatsApp…",
       description: "We'll respond within 1 business hour.",
