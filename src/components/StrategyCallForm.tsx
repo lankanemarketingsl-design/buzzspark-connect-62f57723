@@ -12,6 +12,7 @@ import {
   getServiceName,
   trackWhatsAppClick,
 } from "@/lib/whatsappTracking";
+import { logInquiry } from "@/lib/logInquiry";
 
 const WHATSAPP_NUMBER = "94771437707";
 
