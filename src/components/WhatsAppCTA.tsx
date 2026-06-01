@@ -5,6 +5,7 @@ import {
   getWhatsAppNumber,
   trackWhatsAppClick,
 } from "@/lib/whatsappTracking";
+import { logInquiryFromContext } from "@/lib/logInquiry";
 
 const WhatsAppCTA = () => {
   const { pathname } = useLocation();
